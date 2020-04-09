@@ -1,0 +1,76 @@
+/* Joshua Milbourne
+	04/09/2020 */
+
+/* font squirrel */
+@font-face {
+	font-family: 'rubikregular';
+	src: url('../fonts/webfontkit-20200409-170714/rubik-regular-webfont.woff2') format('woff2'),
+			url('../fonts/webfontkit-20200409-170714/rubik-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+/* body styles */
+body {
+	background-color: #b8d1eb;
+	color: #000000;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+/* nav styles */
+nav li {
+	list-style-type: none;
+}
+
+/* main styles */
+main {
+	background-color: #C5A98B;
+	padding: 10px;
+}
+
+main, footer { 
+	clear: both;
+}
+
+main li {
+	list-style-image: url(../images/tomato20px.png);
+}
+
+/* header styles */
+h1 {
+	font-family: 'Anton', sans-serif;
+	font-size: 3rem;
+}
+
+h2 {
+	font-family: 'rubikregular', sans-serif;
+	font-weight: normal;
+	font-style: italic;
+}
+
+/* footer styles */
+
+footer {
+	font-size: .75em;
+	text-align: center;
+	background-color: rgb(180, 135, 135);
+	padding: 10px 0 10px 0;
+}
+
+/* misc styles */
+#outerwrapper {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+} 
+
+.floatleft { 
+	float: left;
+	margin-right: 3%;
+}
+
+.floatright {
+	float: right;
+	margin-left: 3%;
+}
