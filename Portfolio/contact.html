@@ -34,42 +34,41 @@
     <fieldset id="list">
         <legend>Sign-up</legend>
         <form action="mailto:josh@joshuamilbourne.com?subject=MailingList" enctype="text/plain" method="POST">
-          <section class="formwrapper"><ul class="formList">
-            <li><label for="addMailingList">Add me to your mailing list</label><input type="radio" name="addMailingList" id="addMailingList" value="yes" checked></li>
-            <li><label for="addMailingList">No thanks</label><input type="radio" name="addMailingList" id="addMailingList" value="no"></li>
-          </ul>
-          <legend id="addpadding">Contact Information</legend>
-          <ul class="formList">
-            <li><input type="text" name="fname" id="fname"><label for="fname">First Name</label></li>
-            <li><input type="text" name="lname" id="lname"><label for="lname">Last Name</label></li>
-            <li><input type="email" name="email" id="email"><label for="email">Email</label></li>
-            <li><input type="text" name="address" id="address"><label for="address">Address</label></li>
-            <li><input type="text" name="city" id="city"><label for="city">City</label></li>
-            <li><input type="text" name="state" id="state"><label for="state">State</label></li>
-            <li><input type="text" name="zip" id="zip"><label for="zip">Zip Code</label></li>
-            <li><input type="tel" name="phone" id="phone"><label for="phone">Phone Number</label></li><br>
-            <li><input type="checkbox" name="mobile" id="mobile"><label for="mobile">Is this a mobile phone?</label></li>
-            <li><input type="checkbox" name="mayICall" id="mayICall"><label for="mayICall">May I call or text this number?</label></li><br>
-            <li><label for="hearAbout">How did you hear about me?</label><br><input type="text" name="hearAbout" id="hearAbout" list="hear"></li>
-            <li><label for="movie">What's your favorite movie genre?</label><br><select name="movie" id="movie">
-              <optgroup label="My Favorites">
-              <option value="comedy">Comedy</option>
-              <option value="drama">Drama</option>
-              <option value="action">Action</option>
-              </optgroup>
-              <optgroup label="Not My Favorites">
-              <option value="horror">Horror</option>
-              <option value="romCom">Rom/Com</option>
-              <option value="thriller">Thriller</option>
-              <option value="mystery">Mystery</option>
-              </optgroup>
-              <optgroup label="The Smart Answer Is">
-                <option value="noAnswer">Prefer not to say</option>
-              </optgroup>
-            </select></li><br>
-            <label for="comments">Do you have any comments?</label><br><br>
-            <textarea name="comments" id="comments" cols="40" rows="10"></textarea>
-          </ul><br></section>
+          <section class="formwrapper">
+            <br><br>
+          <input type="radio" name="addMailingList" id="addMailingList" value="yes" checked><label for="addMailingList">Add me to your mailing list</label><br>
+          <input type="radio" name="noAddMailingList" id="noAddMailingList" value="yes"><label for="noAddMailingList">No thanks</label><br><br>
+          <h3 id="removePadding">Contact Information</h3>
+          <input type="text" name="fname" id="fname"><label for="fname">First Name</label><br>
+          <input type="text" name="lname" id="lname"><label for="lname">Last Name</label><br>
+          <input type="email" name="email" id="email"><label for="email">Email</label><br>
+          <input type="text" name="address" id="address"><label for="address">Address</label><br>
+          <input type="text" name="city" id="city"><label for="city">City</label><br>
+          <input type="text" name="state" id="state"><label for="state">State</label><br>
+          <input type="text" name="zip" id="zip"><label for="zip">Zip Code</label><br>
+          <input type="tel" name="phone" id="phone"><label for="phone">Phone Number</label><br><br>
+          <input type="checkbox" name="mobile" id="mobile"><label for="mobile">Is this a mobile phone?</label><br>
+          <input type="checkbox" name="mayICall" id="mayICall"><label for="mayICall">May I call or text this number?</label><br><br>
+          <label for="hearAbout">How did you hear about me?</label><br><input type="text" name="hearAbout" id="hearAbout" list="hear"><br><br>
+          <label for="movie">What's your favorite movie genre?</label><br><select name="movie" id="movie">
+          <optgroup label="My Favorites">
+          <option value="comedy">Comedy</option>
+          <option value="drama">Drama</option>
+          <option value="action">Action</option>
+          </optgroup>
+          <optgroup label="Not My Favorites">
+          <option value="horror">Horror</option>
+          <option value="romCom">Rom/Com</option>
+          <option value="thriller">Thriller</option>
+          <option value="mystery">Mystery</option>
+          </optgroup>
+          <optgroup label="The Smart Answer Is">
+            <option value="noAnswer">Prefer not to say</option>
+          </optgroup>
+          </select><br><br>
+          <label for="comments">Do you have any comments?</label><br>
+          <textarea name="comments" id="comments" cols="40" rows="10"></textarea><br><br>
+          <br></section>
           <input type="submit" value="OK" id="okButton" class="buttons">
           <input type="reset" value="Reset Form" id="resetButton" class="buttons">
           <datalist id="hear">
@@ -87,7 +86,7 @@
     <hr>
     <h3><a href="contact2.html">Contact me</a> or join my <a href="contact.html">Mailing List</a></h3>
     <ul>
-      <li">Phone: <a class="hover" href="tel:+01-408-916-5319">(408) 916-5319</a></li>
+      <li>Phone: <a class="hover" href="tel:+01-408-916-5319">(408) 916-5319</a></li>
       <li>Email: <a class="hover" href="mailto:josh@joshuamilbourne.com">josh@joshuamilbourne.com</a></li>
       <li><a href="https://www.facebook.com/josh.milbourne.3" target="blank"><img src="images/icons8-facebook-64.png" alt="Facebook Icon"></a>
         <a href="https://www.instagram.com/jkmilbourne/" target="blank"><img src="images/icons8-instagram-64.png" alt="Instagram Icon"></a>

@@ -35,7 +35,6 @@ header img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  background-color: #;
 }
 #rapids {
   display: block;
@@ -248,16 +247,7 @@ div img, header img {
 }
 
 /* form styles */
-.formList {
-  list-style-type: none;
-}
-.formList li {
-  margin: .25em;
-}
-.formList label {
-  margin-left: .5em;
-  margin-right: 1em;
-}
+
 input, select, textarea {
   background-color: rgba(25, 134, 161, 0.205);
   border-radius: 6px;
@@ -271,17 +261,19 @@ input:hover, input:focus, select:hover, select:focus, textarea:hover, textarea:f
 }
 form {
   font-weight: bold;
+
 }
 legend {
   color: #9e1212;
   font-weight: bold;
 }
-#addpadding {
-  padding-left: 52px;
+#removePadding {
+  text-align: left;
+  padding-left: 70px;
 }
 .formwrapper {
   width: 100%;
-  padding-left: 28%;
+  padding-left: 32%;
 }
 fieldset {
   border-radius: 14px;
@@ -294,6 +286,7 @@ fieldset {
   background-image: radial-gradient(#4c5c68, #46494C);
   width: 9em;
   height: 2.5em;
+  margin-bottom: 25px;
 }
 .buttons:hover {
   background-image: radial-gradient(#ffffff, #4c5c68);
