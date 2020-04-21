@@ -61,11 +61,11 @@ nav>ul {
   padding: 0;
 }
 nav>ul>li {
-  float: left;
+  /* float: left; */
   /*                                                                           Web Safe Font ***** Rubric #2 */
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.147em;
-  margin-bottom: 2em;
+  /* font-size: 1.147em; */
+  /* margin-bottom: 32px; */
 }
 nav#mainPage>ul>li {
   margin-bottom: 0;
@@ -73,8 +73,9 @@ nav#mainPage>ul>li {
 nav>ul>li>a {
   display: block;
   color: #ffffff;
-  text-align: center;
-  padding:  1.287em 1.1em;
+  text-align: right;
+  padding-right: 10px;
+  /* padding:  1.287em 1.1em; */
   text-decoration: none;
   background-color: #4C5C68;
 }
