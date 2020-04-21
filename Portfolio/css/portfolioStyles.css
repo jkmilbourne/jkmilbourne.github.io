@@ -26,7 +26,7 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   /*                                                                               font squirrel  ***** Rubric #2 */
-  font-family: 'open_sansregular', Arial, Helvetica, sans-serif;
+  font-family: 'open_sansregular', Arial, Helvetica, sans-serif, Times;
 }
 
 /* header styles */
@@ -47,7 +47,7 @@ header img {
 }
 
 /* nav bar styles */
-#logo {
+ #logo {
   border: 0;
   padding-left: 5.02px;
   float: left;
@@ -61,11 +61,11 @@ nav>ul {
   padding: 0;
 }
 nav>ul>li {
-  /* float: left; */
-  /*                                                                           Web Safe Font ***** Rubric #2 */
-  font-family: Arial, Helvetica, sans-serif;
-  /* font-size: 1.147em; */
-  /* margin-bottom: 32px; */
+  float: left;
+  /*                                                                                    Web Safe Font ***** Rubric #2 */
+  font-family: Arial, Helvetica, sans-serif, Times;
+  font-size: 16px;
+  margin-bottom: 32px;
 }
 nav#mainPage>ul>li {
   margin-bottom: 0;
@@ -73,9 +73,8 @@ nav#mainPage>ul>li {
 nav>ul>li>a {
   display: block;
   color: #ffffff;
-  text-align: right;
-  padding-right: 10px;
-  /* padding:  1.287em 1.1em; */
+  text-align: center;
+  padding:  1.6em 1.69042em;
   text-decoration: none;
   background-color: #4C5C68;
 }
@@ -229,7 +228,7 @@ div {
   color: #451969;
   font-weight: bold;
   text-shadow: .5px .5px 3px #6A6262, -.5px -.5px 3px #ffffff;
-  width: 32%;
+  width: 31%;
   height: 410px;
   float: left;
 }
