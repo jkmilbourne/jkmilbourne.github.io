@@ -1,0 +1,439 @@
+/* Joshua Milbourne
+    03/10/2020 */
+
+/*                                                                                  @font-face ***** Rubric #6 */
+@font-face {
+  font-family: 'open_sansregular';
+  src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+       url('../fonts/opensans-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* html styles */
+html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* body styles */
+body {
+    
+  width: 60em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  /*                                                                               font squirrel  ***** Rubric #2 */
+  font-family: 'open_sansregular', Arial, Helvetica, sans-serif;
+}
+
+/* header styles */
+header img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#rapids {
+  display: block;
+  width: 100%;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  border: 0;
+  box-shadow: none;
+  background-image: none;
+}
+
+/* nav bar styles */
+#logo {
+  border: 0;
+  padding-left: 5.02px;
+  float: left;
+  background-image: none;
+  background-color: #4C5C68;
+  box-shadow: none;
+}
+nav>ul {
+  list-style-type: none;
+  margin-top: 0;
+  padding: 0;
+}
+nav>ul>li {
+  float: left;
+  /*                                                                           Web Safe Font ***** Rubric #2 */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.147em;
+  margin-bottom: 2em;
+}
+nav#mainPage>ul>li {
+  margin-bottom: 0;
+}
+nav>ul>li>a {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding:  1.287em 1.1em;
+  text-decoration: none;
+  background-color: #4C5C68;
+}
+nav>ul>li>a:hover, nav>ul>li>a:focus {
+  background-color: #46494C;
+}
+
+/* aside */
+aside {
+  background-image: radial-gradient(rgba(197, 195, 198, 0.25), rgba(25, 134, 161, 0.25));
+  border: 3px 1px;
+  border-style: outset;
+  border-radius: 15px;
+  border-color: #9c9990;
+  margin-bottom: .3em;
+  margin-left: .3em;
+  padding: 1em;
+  box-shadow: 2px 2px 6px #6a6262bb, 1px 1px 3px #fff7e2b6 inset, -2px -2px 6px #6a6262 inset;
+  font-size: 1em;
+  color: #451969;
+  font-weight: bold;
+  width: 20%;
+  float: right;
+  
+}
+
+/* main styles */
+main {
+  margin-top: 0;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+/* main.pic {
+  padding-top: 5em;
+} */
+
+/* footer styles */
+footer {
+  font-size: 1em;
+  margin-bottom: 0;
+  clear: both;
+}
+footer>h3 {
+  text-align: center;
+}
+footer>h3>a, a.backA {
+  text-decoration: none;
+  color: #423191;
+}
+footer>h3>a:hover, footer>h3>a:focus, a.backA:hover, a.backA:focus {
+  color: #E0D8DE;
+  background-color: #46494C;
+}
+footer>ul {
+  font-weight: bold;
+  text-align: center;
+  list-style-type: none;
+  color: #9e1212;
+  padding-left: 0;
+}
+
+/* footer link styles */
+a.hover {
+  text-decoration: none;
+  color: #423191;
+}
+a.hover:hover, a.hover:focus {
+  color: #E0D8DE;
+  background-color: #46494C;
+}
+
+/* h styles */
+h1 {
+
+  text-align: center;
+  font-family: serif;
+  font-weight: normal;
+  font-variant: small-caps;
+  margin-bottom: 0;
+  margin-top: 0;
+  
+}
+h2, h3 {
+  text-align: center;
+  color: #9e1212;
+  font-size: 1em;
+}
+
+/* list styles */
+ul {
+  list-style-type: square;
+}
+main dl {
+  padding-left: 14em;
+}
+#worklist {
+  padding-left: .5em;
+}
+#dirlist {
+  padding-left: 19.5em;
+}
+
+/* image styles */
+
+img.tall {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-bottom: 2em;
+  
+}
+img.long {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  margin-bottom: 2em;
+}
+main img, header img {
+  background-image: radial-gradient(#c5c3c6, #1985a1);
+  border: #C5C3C6 8px ridge;
+  box-shadow: 1px 1px 6px black, -1px -1px 6px white;
+}
+
+iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: #C5C3C6 8px ridge;
+  box-shadow: 1px 1px 6px black, -1px -1px 6px white;
+  margin-bottom: 2em;
+}
+
+/* sections and divs styles */
+section {
+  display: block;
+  float: left;
+}
+div {
+  background-image: radial-gradient(rgba(197, 195, 198, 0.25), rgba(25, 134, 161, 0.25)) ;
+  border: 3px 1px;
+  border-style: outset;
+  border-radius: 15px;
+  border-color: #9c9990;
+  margin-bottom: .3em;
+  margin-left: .3em;
+  padding: 1em;
+  box-shadow: 2px 2px 6px #6a6262bb, 1px 1px 3px #fff7e2b6 inset, -2px -2px 6px #6a6262 inset;
+  font-size: 1.25em;
+  color: #451969;
+  font-weight: bold;
+  text-shadow: .5px .5px 3px #6A6262, -.5px -.5px 3px #ffffff;
+  width: 32%;
+  height: 410px;
+  float: left;
+}
+div:hover {
+  background-image: radial-gradient(#c5c3c6, #4c5c68);
+}
+main>a {
+  text-decoration: none;
+}
+
+div img, header img {
+  padding-top: .3em;
+  padding-left: .3em;
+  padding-right: .3em;
+}
+
+/* form styles */
+.formList {
+  list-style-type: none;
+}
+.formList li {
+  margin: .25em;
+}
+.formList label {
+  margin-left: .5em;
+  margin-right: 1em;
+}
+input, select, textarea {
+  background-color: rgba(25, 134, 161, 0.205);
+  border-radius: 6px;
+}
+textarea {
+  border-style: inset;
+  box-shadow: 2px 2px 2px grey, -2px -2px 2px white;
+}
+input:hover, input:focus, select:hover, select:focus, textarea:hover, textarea:focus {
+  background-color: #ffffff;
+}
+form {
+  font-weight: bold;
+}
+legend {
+  color: #9e1212;
+  font-weight: bold;
+}
+#addpadding {
+  padding-left: 52px;
+}
+.formwrapper {
+  width: 100%;
+  padding-left: 28%;
+}
+fieldset {
+  border-radius: 14px;
+  background-image: radial-gradient(rgba(197, 195, 198, 0.2), rgba(25, 134, 161, 0.2)) ;
+}
+.buttons {
+  border-radius: 1.5em;
+  font-weight: bolder;
+  color:#ffffff;
+  background-image: radial-gradient(#4c5c68, #46494C);
+  width: 9em;
+  height: 2.5em;
+}
+.buttons:hover {
+  background-image: radial-gradient(#ffffff, #4c5c68);
+  color: #46494C;
+}
+
+a.mainBtn img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#okButton {
+  margin-left: 30%;
+  float: left;
+}
+#resetButton {
+  margin-right: 30%;
+  float: right;
+}
+
+
+/* list styles */
+dd>a {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #9e1212;
+  text-decoration: none;
+}
+dt {
+  padding-top: .5em;
+}
+
+/* misc styles */
+.title {
+  font-weight: bolder;
+  font-variant: small-caps;
+  text-decoration: underline;
+}
+.lead {
+  font-style: italic;
+}
+.years {
+  font-style: oblique;
+}
+.job {
+  color: #9e1212;
+  font-weight: bold;
+}
+.school {
+  color: #9e1212;
+  font-weight: bold;
+}
+.degree {
+  font-style: italic;
+  font-weight: bold;
+}
+
+#motto {
+  text-align: center;
+  font-weight: bolder;
+}
+hr {
+  width: 75%;
+  height: .5em;
+  border-style: outset;
+  border-radius: .60em;
+  background-color: #4C5C68;
+  box-shadow: 2px 2px 6px #6a6262bb, 1px 1px 3px #fff7e2b6 inset, -2px -2px 6px #6a6262 inset;
+}
+p {
+  margin-top: 0;
+}
+p.back {
+  color: #9e1212;
+  text-align: center;
+}
+blockquote {
+  /*                                                                                     Google Font ***** Rubric #2*/
+  font-family: 'IM Fell French Canon SC', 'Times New Roman', Times, serif;
+}
+address {
+  display: block;
+  width: 17.1em;
+  margin-left: auto;
+  margin-right: auto;
+  color: #9e1212;
+  font-weight: bold;
+  padding: 1em;
+  border: 4px rgb(194, 183, 170) outset;
+}
+address a {
+  text-decoration: none;
+  color: #423191;
+  font-weight: bold;
+}
+address a:hover, address a:focus {
+  background-color: #46494C;
+  color: #E0D8DE;
+}
+#contactP {
+  display: block;
+  width: 65%;
+  margin: 2em auto;
+  font-weight: bold;
+}
+#sarcasm {
+  color: #9e1212;
+  font-style: oblique;
+}
+
+/* photo nav */
+.photoNav {
+  list-style-type: none;
+  font-weight: bold;
+  text-align: center;
+}
+.photoNav a {
+  text-decoration: none;
+  color: #423191;
+}
+.photoNav a:hover, .photoNav a:focus {
+  background-color: #46494C;
+  color: #ffffff;
+}
+
+
+#photoIntro {
+  font-weight: bold;
+  text-align: center;
+  padding: 2em;
+}
+.pa a {
+  display: block;
+  width: fit-content;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 6em;
+}
+.pa a:hover, .pa a:focus {
+  background-color: #46494C;
+  color: #ffffff;
+}
+
