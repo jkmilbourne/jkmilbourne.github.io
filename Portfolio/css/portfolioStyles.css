@@ -75,11 +75,11 @@ nav>ul>li>a {
   display: block;
   color: #ffffff;
   text-align: center;
-  padding:  25px 27px;
+  padding:  25.4px 27px;
   text-decoration: none;
   background-color: #4C5C68;
 }
-nav>ul>li>a:hover, nav>ul>li>a:focus, #logo:hover, #logo:focus             {
+nav>ul>li>a:hover, nav>ul>li>a:focus, #logo:hover, #logo:focus {
   background-color: #46494C;
 }
 
