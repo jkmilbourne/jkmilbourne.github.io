@@ -55,7 +55,9 @@ header img {
   background-image: none;
   background-color: #4C5C68;
   box-shadow: none;
+  height: 64.4px;
 }
+
 nav>ul {
   list-style-type: none;
   margin-top: 0;
@@ -75,7 +77,7 @@ nav>ul>li>a {
   display: block;
   color: #ffffff;
   text-align: center;
-  padding:  25.4px 27px;
+  padding:  25.4px 26.99px;
   text-decoration: none;
   background-color: #4C5C68;
 }
