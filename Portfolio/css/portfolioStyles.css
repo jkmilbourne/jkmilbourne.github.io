@@ -79,7 +79,7 @@ nav>ul>li>a {
   text-decoration: none;
   background-color: #4C5C68;
 }
-nav>ul>li>a:hover, nav>ul>li>a:focus {
+nav>ul>li>a:hover, nav>ul>li>a:focus, #logo:hover, #logo:focus             {
   background-color: #46494C;
 }
 
@@ -144,6 +144,9 @@ a.hover {
 }
 a.hover:hover, a.hover:focus {
   color: #E0D8DE;
+  background-color: #46494C;
+}
+footer img:hover, footer img:focus {
   background-color: #46494C;
 }
 
@@ -306,6 +309,10 @@ a.mainBtn img {
 #resetButton {
   margin-right: 30%;
   float: right;
+}
+main.resume a:hover, main.resume a:focus {
+  color: #E0D8DE;
+  background-color: #46494C;
 }
 
 
