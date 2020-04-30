@@ -1,0 +1,90 @@
+/* Joshua Milbourne 
+   04/30/2020 */
+body { background-color:#f4ffe4; 
+       color:#333333;
+	   font-family: Verdana, Arial, sans-serif;
+}
+#container { margin-left: auto;
+             margin-right: auto;
+             width: 80%;
+
+}			 
+h1 { background-color: #5c743d;
+     color:#ffffbe;
+	 font-family: Georgia, "Times New Roman", serif;
+	 background-image: url(../images/trilliumlogo.jpg);
+	 background-repeat: no-repeat;
+	 background-position: left;
+	 border-radius: 15px 50px;
+	 border: 4px solid #a1a1a1;
+	 text-indent: 150px;
+	 font-size: 3em;
+     line-height: 250%;
+	 height: 120px;
+
+}
+h2 { color:#5c743d;
+     font-family: Georgia, "Times New Roman", serif;
+}
+p { text-indent: 3em; }
+
+nav { font-weight: bold; }
+
+nav ul li {
+    display: inline;
+}
+nav ul {
+    padding: 0em;
+    list-style-type: none;
+}
+
+.companyname { color: #5c743d; 
+               font-weight: bold;
+}
+footer {  font-family: Georgia, "Times New Roman", serif;
+          font-size: .80em;
+		  font-style: italic;
+		  text-align: center;
+}
+
+/* Small devices  */
+@media only screen and (max-width: 640px) {
+    nav ul li {
+        display: block;
+    }
+    nav ul {
+        padding: 0em;
+        list-style-type: none;
+    }
+    h1 {
+        background-image: none;
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+        color: #5c743d;
+        text-indent: 0;
+        font-size: 2em;
+        line-height: 100%;
+        text-align: center;
+        height: fit-content;
+
+    }
+    #container {
+        background-image: url(../images/trilliumMobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 2px solid black;
+        padding: 0 .5em .5em .5em;
+    }
+}
+/* Medium devices  */
+@media only screen and (min-width: 641px) and (max-width: 1200px) {
+    h1 {
+        background-image: url(../images/trilliumlogo.png);
+        border: none;
+        border-radius: 0%;
+        padding-left: 228px;
+        text-indent: 0%;
+        height: fit-content;
+    }
+}
