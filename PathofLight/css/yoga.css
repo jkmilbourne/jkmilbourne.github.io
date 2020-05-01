@@ -1,0 +1,96 @@
+/* Joshua Milbourne
+	05/01/2020 */
+
+body { 
+	background-color: #F5F5F5;
+    color: #3F2860;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+header { 
+	background-color: #9BC1C2; 
+    background-image: url(../images/lilyheader.jpg);
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
+h1 { 
+	text-indent: 1em;
+    line-height: 400%; 
+}
+
+nav { 
+	 font-weight: bold; 
+	 margin: 0;
+	 padding: 0;
+}
+nav ul {
+	list-style-type: none;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+nav ul li {
+	display: inline;
+}
+
+footer { 
+	background-color: #9BC1C2; 
+    font-size: small;
+	text-align: center;
+	font-style: italic;
+	padding: .5em;
+}
+
+main ul {
+	list-style-image: url(../images/yogabullet.png); 
+	margin-left: 3em;
+}
+
+main img {
+	width: 100%;
+}
+
+.schedule {
+	border-collapse: collapse;
+	border: solid black 1px;
+	width: 100%;
+	margin-bottom: .5em;
+}
+
+td {
+	border: 1px solid black;
+	text-align: center;
+}
+address {
+	margin-bottom: .5em;
+}
+#door {
+	width: 13.5em;
+	float: right;
+}
+
+dt {
+	font-weight: bold;
+}
+
+/* ============================== */
+/* ==  Mobile 640px and under  == */
+/* ============================== */
+@media screen and (max-width: 640px) {
+	nav ul li {
+		display: block;
+	}
+	header {
+		background-image: none;
+	}
+	body {
+		background-image: url(../images/yogamobile.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	main img {
+		display: none;
+	}
+}
+
