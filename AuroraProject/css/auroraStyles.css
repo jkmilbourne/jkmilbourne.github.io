@@ -1,0 +1,54 @@
+.form__heading {
+  width: 100%;
+  text-shadow: 0.25rem 0.25rem darkgreen;
+  color: orange;
+  background: green;
+  line-height: 5rem;
+  padding: 1.5rem;
+}
+
+.form {
+  width: 100%;
+  padding-bottom: 1.5rem;
+}
+
+.form .form__label {
+  color: #000000;
+  display: block;
+  font-size: 2rem;
+  line-height: 2rem;
+  padding-top: 1.5rem;
+}
+
+.form .form__input {
+  width: 100%;
+  padding: 1.5rem;
+  background: #000000;
+  border: 0.1rem solid green;
+  color: lightpink;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 2.75rem;
+}
+
+.form .form__input:focus {
+  background: green;
+  color: orange;
+}
+
+.form .form__input:invalid {
+  background: #ff0008;
+  border: 0.1rem solid orange;
+  color: orange;
+}
+
+.form .form__textarea {
+  width: 100%;
+  color: green;
+  background: #000000;
+  border: 0.1rem solid green;
+  outline: none;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+/*# sourceMappingURL=auroraStyles.css.map */

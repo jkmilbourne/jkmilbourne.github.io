@@ -1,0 +1,27 @@
+$white: orange;
+$offwhite: lightpink;
+$red: rgb(255, 0, 8);
+$teal: green;
+$darkteal: darkgreen;
+$darkblue: #000000;
+
+$color-text: $white;
+$color-form-heading-text-shadow: $darkteal;
+$color-form-heading-background: $teal;
+$color-form-label-text: $darkblue;
+$color-form-input-background: $darkblue;
+$color-form-input-border: $teal;
+$color-form-input-text: $offwhite;
+$color-form-input-focus-background: $teal;
+$color-form-input-invalid-background: $red;
+$color-form-input-invalid-border: $white;
+$color-form-textarea-text: $teal;
+$color-form-textarea-background: $darkblue;
+$color-form-textarea-border: $teal;
+
+$padding-form-heading: 1.5rem;
+$padding-form-bottom: 1.5rem;
+$padding-form-label-top: 1.5rem;
+$padding-form-textarea: 1.5rem;
+
+$margin-form-textarea-bottom: 1.5rem;
