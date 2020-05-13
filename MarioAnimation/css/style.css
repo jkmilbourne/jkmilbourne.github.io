@@ -45,7 +45,7 @@ html, body{
 /*// ELEMENTS TO ANIMATE //*/
 .mario {
   position: absolute;
-  top: -60px;
+  top: -40px;
   left: 0;
   animation: drive 3s infinite linear both, 
               jump 0.3s 1.2s ease;
@@ -58,10 +58,10 @@ html, body{
 
 .luigi {
   animation: drive 5s infinite linear both;
-  /* position: absolute;
-  top: 10px;
+  position: absolute;
+  top: 80px;
   left: 0;
-  animation-name: drive;
+  /* animation-name: drive;
   animation-duration: 5s;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
@@ -91,7 +91,7 @@ html, body{
 
 @keyframes drive {
   from {transform: translateX(-200px);}
-  to {transform: translateX(1500px);}
+  to {transform: translateX(2000px);}
 }
 
 @keyframes wind {
@@ -100,9 +100,9 @@ html, body{
 }
 
 @keyframes jump {
-  0% {top: -60px;}
+  0% {top: -40px;}
   50% {top: -120px}
-  100% {top: -60px;}
+  100% {top: -40px;}
 
 } 
 
