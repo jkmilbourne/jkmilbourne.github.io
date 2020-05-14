@@ -10,6 +10,12 @@ html, body{
   margin: 0;
 }
 
+body {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .grass, .sky, .road{
   position: relative;
 }
@@ -91,7 +97,7 @@ html, body{
 
 @keyframes drive {
   from {transform: translateX(-200px);}
-  to {transform: translateX(2000px);}
+  to {transform: translateX(1400px);}
 }
 
 @keyframes wind {
