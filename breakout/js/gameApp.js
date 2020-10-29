@@ -31,19 +31,19 @@ function preload() {
   // bacground color white
   game.stage.backgroundColor = '#f0f0f0';
   // load background Img 1
-  game.load.image('bgImg', 'assets/img/warpSpeed.png')
+  game.load.image('bgImg', '../assets/img/warpSpeed.png')
   // load background Img 2
-  game.load.image('bgImg2', 'assets/img/hallway.png')
+  game.load.image('bgImg2', '../assets/img/hallway.png')
   // load ball
-  game.load.image('ball', 'assets/img/ball.png')
+  game.load.image('ball', '../assets/img/ball.png')
   // load paddle
-  game.load.image('paddle', 'assets/img/paddle.png')
+  game.load.image('paddle', '../assets/img/paddle.png')
   // load brick
-  game.load.image('brick', 'assets/img/brick.png')
+  game.load.image('brick', '../assets/img/brick.png')
   // load spritesheet
-  game.load.spritesheet('ball', 'assets/img/wobble.png', 20, 20);
+  game.load.spritesheet('ball', '../assets/img/wobble.png', 20, 20);
   // load start button
-  game.load.spritesheet('button', 'assets/img/button.png', 120, 40);
+  game.load.spritesheet('button', '../assets/img/button.png', 120, 40);
 };
 
 function create() {
