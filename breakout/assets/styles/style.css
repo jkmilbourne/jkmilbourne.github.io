@@ -1,3 +1,18 @@
+/*********************************************************************
+***
+*Original Author:                                 *Joshua Milbourne
+*Date Created:                                    *10/27/20
+*Version:                                         *1.0
+*Date Last Modified:                              *10/28/20
+*Modified by:                                     *Joshua Milbourne
+*Modification log:                                *
+
+    Version 0.0 - 10/27/20 - Created file and connected to index.html and gameApp.html. Padding and Margin to 0 for all elements.
+    Version 1.0 - 10/28/20 - added styles to move #logoImg and .navbar-brand and #footerText. Added Background Img.
+    
+***
+*********************************************************************/
+
 * {
   padding: 0; margin: 0; 
 }
