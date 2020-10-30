@@ -1,58 +1,76 @@
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author:                                   #Joshua Milbourne
+#Date Created:                                      #10/26/20
+#Version:                                           #1.0
+#Date Last Modified:                                #10/28/20
+#Modified by:                                       #Joshua Milbourne
+#Modification log:                                  #
+      Version 0.0 - 10/26/20 - Created project with file directory and Mod Log. Phaser 2, Bootstrap 3, FontAwesome 5 cdns
+      Version 0.5 - 10/27/20 - Added NavBar and Footer.  Created bootstrap cols
+      Version 1.0 - 10/28/20 - Added Background Image and styles. Added Favicon
+ --
+------------------------------------------------------------------------------------------------------------------>
+
 <!DOCTYPE html>
 <html lang="en"
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Defeat all the space blocks by bouncing the space ball off of your space paddle">
-    <meta name="keywords" content="Breakout, Pong, game, mobile game, Joshua Milbourne, Phaser 2, Bootstrap 3">
-    <meta name="author" content="Joshua Milbourne">
-    <title>Breakout: the Game</title>
-    <link rel="icon" href="assets/img/ball.png" type="image/gif" sizes="16x16">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="assets/styles/style.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-</head>
-<body>
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width">
+      <meta name="description" content="Defeat all the space blocks by bouncing the space balls off of your space paddle">
+      <meta name="keywords" content="Breakout, Pong, game, mobile game, Joshua Milbourne, Phaser 2, Bootstrap 3">
+      <meta name="author" content="Joshua Milbourne">
+      <title>Breakout: the Game</title>
+      <!-- favicon -->
+      <link rel="icon" href="assets/img/ball.png" type="image/gif" sizes="16x16">
+      <!-- bootstrap 3 -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <!-- font-awesome 5 -->
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+      <!-- style sheet style.css -->
+      <link rel="stylesheet" href="assets/styles/style.css">
+      <!-- bootstrap 3 -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!---------- NavBar dark Theme mobile responsive fixed-top Bootstrap template w3schools -->
     <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>                        
-            </button>
-            <a class="navbar-brand" href="#"><img id="logoImg" src="assets/img/ball.png" alt="Ball logo">Breakout</a>
-          </div>
-          <div class="collapse navbar-collapse" id="myNavbar">
-          </div>
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="#"><img id="logoImg" src="assets/img/ball.png" alt="Ball logo">Breakout</a>
         </div>
-      </nav>
-        
-      <div class="container-fluid text-center">    
-        <div class="row content">
-
-          <div class="col-sm-8 col-sm-offset-2 text-center"> 
-            <h1>Welcome to the colossally stupendous game of Breakout</h1>
-            <h2>Defeat all the Space Blocks by bouncing your Space Balls off Space Walls using your Space Paddle!</h2>
-            <hr>
-            <h2>Controls</h2>
-            <h3>On TOUCHSCREENS, uses your finger to slide the paddle left and right. <br>On COMPUTERS, use your mouse to slide the paddle left and right. <br><br>Good Luck!</h3>
-            <hr>
-            <img src="assets/img/gameImg.png" alt="gameplay screenshot" width="40%">
-            <h3>Click the Space Button when you are ready to:</h3>
-            <a href="pages/gameApp.html"><button type="button" class="btn btn-lg btn-danger btn-block">Enter the Game</button></a>
-            <br><br>
-            
-          </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
         </div>
-
-        <nav class="navbar navbar-inverse navbar-fixed-bottom">
-            <div>
-                <p id="footerText" class="small"><i class="fas fa-copyright"></i>2020 That's Some Ball Co - All Rights reserved</p>
-            </div>
-        </nav>
       </div>
-      
-</body>
+    </nav>
+    <!--------------------------------------------- Content Bootsrtap middle 8 columns only -->
+    <div class="container-fluid text-center">    
+      <div class="row content">
+
+        <div class="col-sm-8 col-sm-offset-2 text-center"> 
+          <h1>Welcome to the colossally stupendous game of Breakout</h1>
+          <h2>Defeat all the Space Blocks by bouncing your Space Balls off Space Walls using your Space Paddle!</h2>
+          <hr>
+          <h2>Controls</h2>
+          <h3>On TOUCHSCREENS, uses your finger to slide the paddle left and right. I would recomend playing in landscape mode. <br><br> On COMPUTERS, use your mouse to slide the paddle left and right. <br><br>Good Luck!</h3>
+          <hr>
+          <img src="assets/img/gameImg.png" alt="gameplay screenshot" width="40%">
+          <h3>Click the Space Button when you are ready to:</h3>
+          <a href="pages/gameApp.html"><button type="button" class="btn btn-lg btn-danger btn-block">Enter the Game</button></a>
+          <br><br>
+        </div>
+      </div>
+      <!---------------------- Footer NavBar dark Theme fixed-bottom w3schools template -->
+      <nav class="navbar navbar-inverse navbar-fixed-bottom">
+          <div>
+              <p id="footerText" class="small"><i class="fas fa-copyright"></i>2020 That's Some Ball Co - All Rights reserved</p>
+          </div>
+      </nav>
+    </div>
+  </body>
 </html>
