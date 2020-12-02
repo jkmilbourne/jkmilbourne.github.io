@@ -1,7 +1,0 @@
-.rec {
-    transition: all 2s;
-}
-svg:hover .rec {
-    fill: blue;
-    transform: scaleX(1.4) scaleY(.7);
-}
