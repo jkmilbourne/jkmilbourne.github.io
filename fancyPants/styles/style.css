@@ -1,0 +1,473 @@
+/*********************************************************************
+***
+*Original Author:                                   *Joshua Milbourne
+*Date Created:                                       *08/07/20
+*Version:                                                *1
+*Date Last Modified:                              *09/04/20
+*Modified by:                                          *Joshua Milbourne
+*Modification log:                                  *
+08/07/20
+created css styles sheet
+09/04/20
+updated all css to apply to recently added pages
+
+***
+******************************************************************** */
+/*********************************************************************
+***
+*Original Author:                                   *
+*Date Created:                                       *
+*Version:                                                *
+*Date Last Modified:                              *09/11/20
+*Modified by:                                          *Joshua Milbourne
+*Modification log:                                  *
+updated css to work with added pages
+refined input styling
+***
+******************************************************************** */
+/*********************************************************************
+***
+*Original Author:                                   *
+*Date Created:                                       *
+*Version:                                                *
+*Date Last Modified:                              *09/18/20
+*Modified by:                                          *Joshua Milbourne
+*Modification log:                                  *
+updated css for links and imgs
+changed bkg img for photos page
+added media quaries for mobile and tablets
+***
+******************************************************************** */
+
+/* mobile styles */
+
+/* fonts */
+@font-face {
+    font-family: "alex_brushregular";
+    src: url(../fonts/webfontkit-20200828-172818/alexbrush-regular-webfont.woff2)
+            format("woff2"),
+        url(../fonts/webfontkit-20200828-172818/alexbrush-regular-webfont.woff)
+            format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* background images */
+#landing_page {
+    background-image: url(../images/landingPage.jpg);
+}
+#home_page {
+    background-image: url(../images/homePage.jpg);
+}
+#faq_page {
+    background-image: url(../images/faq.jpg);
+}
+#contact_page {
+    background-image: url(../images/contact.jpg);
+}
+#bookUs_page {
+    background-image: url(../images/bookUs.jpg);
+}
+#reviews_page {
+    background-image: url(../images/reviews.jpg);
+}
+#wishList_page {
+    background-image: url(../images/wishList.jpg);
+}
+#photos_page {
+    background-color: #000000;
+}
+.html_back_img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+/* basic styles */
+* {
+    margin: 0;
+    text-decoration: none;
+}
+html {
+    background-color: black;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+/* body styles */
+body {
+    /* height: 1vh; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: alex_brushregular, Geneva, Tahoma, sans-serif;
+}
+.content {
+    flex: 1 0 auto;
+}
+
+/* header styles */
+header {
+    /* height: 5em; */
+    /* padding-top: 1em; */
+    /* padding-bottom: 1em; */
+    /* margin-left: 10%; */
+    /* margin-right: 10%; */
+    width: 95%;
+    margin-top: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1.5em;
+    text-align: center;
+    color: #000000;
+    background-color: rgba(240, 248, 255, 0.877);
+}
+#header_logo {
+    /* display: block; */
+    /* position: absolute; */
+    /* top: 2.5%; */
+    /* float: left; */
+    /* padding-left: 1em; */
+    height: 128px;
+}
+#landingH1 {
+    font-size: 3em;
+}
+#headerH1 {
+    /* float: left; */
+    /* padding-left: 3em; */
+    margin-top: auto;
+}
+
+/* nav styles */
+nav {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+}
+nav ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+nav a {
+    color: black;
+}
+/* nav li {
+    background-color: rgba(240, 248, 255, 0.603);
+    margin: auto;
+    width: 200px;
+    border-radius: 1.5em;
+    margin-bottom: .5em;
+} */
+nav li:hover {
+    background-color: #ffffff;
+}
+#nav_items {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* float: right; */
+    font-size: 1.5em;
+    /* padding-top: 1em; */
+    /* padding-right: 1.5em; */
+}
+
+/* id styles */
+#greetings {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-family: alex_brushregular, Geneva, Tahoma, sans-serif;
+}
+#greetings h1 {
+    text-align: center;
+    font-size: 4em;
+}
+#greetings h2 {
+    font-size: 3.5em;
+}
+#tasks {
+    background-color: #ffffff;
+    /* float: right;   */
+    width: 85%;
+    margin: 2em auto;
+    padding: 1em;
+    border: 2px solid black;
+}
+#tasks a {
+    color: rgb(57, 100, 117);
+    margin-right: 0.5em;
+}
+#tasks a:focus,
+#tasks a:hover {
+    color: tomato;
+}
+#tasks a:active {
+    color: rgb(102, 176, 205);
+}
+
+/* class styles */
+.main {
+    width: 95%;
+    margin: 2em auto;
+    background-color: rgba(240, 248, 255, 0.788);
+    border-radius: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 2em;
+}
+.main h2 {
+    padding: 0 1em;
+}
+
+/* tag styles */
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+form {
+    text-align: center;
+    color: #000000;
+}
+label {
+    /* float: left; */
+    /* width: 17.25em; */
+    text-align: center;
+    display: block;
+}
+input,
+button {
+    display: block;
+    width: 11em;
+    margin: 0 auto;
+    border: 2px ridge lightgray;
+    border-radius: 5px;
+}
+.btn:hover,
+.btn:focus {
+    background-color: rgba(102, 176, 205, 0.452);
+}
+.btn:active {
+    background-color: rgb(102, 176, 205);
+}
+.error {
+    display: block;
+    color: red;
+}
+textarea {
+    display: block;
+    margin: 0 auto 2em;
+    border: 2px ridge lightgray;
+    border-radius: 10px;
+    width: 60%;
+    padding: 1em;
+}
+blockquote {
+    width: 80%;
+    margin: 0 auto;
+}
+.quotes {
+    margin: 0 0 2em;
+    padding: 1em 0;
+}
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin: 0 auto 1em;
+}
+td {
+    width: 3em;
+    height: 3em;
+    vertical-align: top;
+    padding: 0.5 0 0 0.5;
+    border: 1px solid black;
+}
+
+/* link styles */
+a {
+    color: #000000;
+}
+a:focus,
+a:hover {
+    color: tomato;
+}
+/* #headerH1:hover {
+    color: #ffffff;
+} */
+#top_link {
+    color: rgb(56, 100, 117);
+    display: block;
+    width: 8em;
+    margin: 0 auto;
+}
+#top_link:focus,
+#top_link:hover {
+    color: tomato;
+}
+
+/* img tags */
+.main img {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 1em auto 0;
+    border: 2px ridge lightgray;
+    border-radius: 10px;
+}
+figcaption {
+    font-family: alex_brushregular, Geneva, Tahoma, sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+}
+#photos {
+    width: 95%;
+}
+#landing_main {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    background-color: rgba(240, 248, 255, 0.788);
+    border-radius: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#landingImg {
+    width: 80%;
+    margin: 2em;
+}
+
+/* footer styles */
+footer {
+    /* position: absolute; */
+    /* bottom: 0; */
+    width: 95%;
+    flex-shrink: 0;
+    margin-left: auto;
+    margin-right: auto;
+    /* height: 5.5em; */
+    /* margin-left: 10%; */
+    /* margin-right: 10%; */
+    text-align: center;
+    padding-bottom: 7px;
+    border-radius: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.85em;
+    color: #000000;
+    background-color: rgba(240, 248, 255, 0.603);
+}
+
+.center-text {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+section.section-login {
+    padding: 2rem;
+}
+
+section.section-login label {
+    display: block;
+    width: 60%;
+    text-align: left;
+    margin: 0 20% .5rem;
+}
+
+section.section-login input {
+    display: block;
+    margin-bottom: 2rem;
+}
+
+/* mobile styles */
+
+@media screen and (max-width: 1023px) {
+    nav li {
+        background-color: rgba(240, 248, 255, 0.603);
+        margin: auto;
+        width: 200px;
+        border-radius: 1.5em;
+        margin-bottom: 0.5em;
+        /* display: flexbox; */
+    }
+}
+
+/* tablet styles */
+
+@media screen and (min-width: 768px) {
+    #photos_page {
+        background-image: url(../images/photos.jpg);
+    }
+    #landing_main {
+        width: 480px;
+    }
+    #landingImg {
+        margin: 2em;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .main {
+        width: 60%;
+    }
+}
+
+/* laptop styles */
+
+@media screen and (min-width: 1024px) {
+    body {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+    #header_logo {
+        display: block;
+        height: 64px;
+        float: left;
+        margin: 0.5em 0 0 0.5em;
+    }
+    #headerH1 {
+        display: flex;
+        line-height: 64px;
+        margin-top: 0.5em;
+    }
+    #landingH1 {
+        margin-bottom: auto;
+    }
+    .main {
+        width: 65%;
+    }
+    nav a {
+        color: rgb(76, 122, 141);
+        display: inline-block;
+        width: 13.5%;
+        font-size: 0.75em;
+        margin-bottom: 1em;
+    }
+    label {
+        width: 30%;
+        float: left;
+        text-align: right;
+    }
+    input {
+        width: 60%;
+        /* float: right; */
+    }
+
+    .error {
+        width: 60%;
+        float: right;
+        margin-right: 2em;
+        clear: both;
+    }
+    .btn {
+        width: 30%;
+    }
+    #time_stamp {
+        display: inline-block;
+        width: 30%;
+        margin-left: 2em;
+    }
+}
+
+/* @media screen and (max-width: 1440px) and (min-width: 1024px) {
+
+} */

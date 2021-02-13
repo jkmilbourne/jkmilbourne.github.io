@@ -1,0 +1,99 @@
+/*********************************************************************
+***
+*Original Author:                                   *Joshua Milbourne
+*Date Created:                                       *09/09/20
+*Version:                                                *
+*Date Last Modified:                              *
+*Modified by:                                          *
+*Modification log:                                  *
+styes for FAQ page
+***
+******************************************************************** */
+
+/* faqs styles */
+#faqs {
+    background-color: rgba(240, 248, 255, 0.849);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* width: 80%; */
+    width: 95%;
+    /* margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em; */
+    margin: 2em auto;
+    border-radius: 1.5em;
+    padding-bottom: 1em;
+
+}
+#faqs h1 {
+    color: #000000;
+    /* padding-top: 1em; */
+    text-align: center;
+}
+#faqs h2 {
+    font-size: 1.5em;
+    /* padding: .25em 0 .25em 25px; */
+    cursor: pointer;
+    background: url(../images/plus.png) no-repeat left center;
+    background-position-x: 13%;
+    /* text-align: left; */
+    /* margin-left: 26em; */
+    
+}
+#faqs h2.minus {
+    background: url(../images/minus.png) no-repeat left center;
+    background-position-x: 13%;
+}
+#faqs p {
+    padding: 0 2em;
+    color: #000000;
+}
+#faqs a {
+    color: #7700ff;
+}
+#faqs a:focus, #faqs a:hover {
+    color: rgb(0, 132, 255);
+}
+#faqs div {
+    display: none;
+}
+#faqs div.open {
+    display: block;
+}
+
+.brand_name {
+    color: #000000;
+    font-family: alex_brushregular, Geneva, Tahoma, sans-serif;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+/* tablet styles */
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    #faqs {
+        width: 60%;
+    }
+    
+    #faqs h2 {
+        background-position-x: 22%;
+    }
+    #faqs h2.minus {
+        background-position-x: 22%;
+    }
+}
+
+
+/* laptop styles */
+
+@media screen and (min-width: 1024px) {
+    #faqs {
+        width: 65%;
+    }
+    
+    #faqs h2 {
+        background-position-x: 30%;
+    }
+    #faqs h2.minus {
+        background-position-x: 30%;
+    }
+}

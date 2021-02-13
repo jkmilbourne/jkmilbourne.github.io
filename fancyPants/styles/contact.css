@@ -1,0 +1,45 @@
+/*********************************************************************
+***
+*Original Author:                                   *Joshua Milbourne
+*Date Created:                                       *09/09/20
+*Version:                                                *
+*Date Last Modified:                              *
+*Modified by:                                          *
+*Modification log:                                  *
+styles included for contact us page
+***
+******************************************************************** */
+
+/* contact_forms styles */
+#contact_form {
+    padding-bottom: 1em;
+}
+#contact_form h1 {
+    padding-top: .5em;
+}
+
+#contact_form p, #contact_form h1{
+    margin: 1em 2em;
+    text-align: center;
+}
+#date_contact {
+    text-align: center;
+}
+/* #send_message {
+    /* margin-left: 12em; */
+/* } */
+.brand_name {
+    color: #000000;
+    font-family: alex_brushregular, Geneva, Tahoma, sans-serif;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+input, select {
+    width: 15em;
+    /* margin-left: 1em; */
+    /* margin-bottom: 1em; */
+}
+.error { color: red; }
+.show { display: block; }
+.hide { display: none; }
