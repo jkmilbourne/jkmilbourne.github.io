@@ -67,7 +67,6 @@ const timeStamp = function() {
 	minutes = ( minutes < 10 ) ? "0" + minutes : minutes;  // Pad minutes
 	let dateString =  hours + ":" + minutes + amPm;
     dateString +=  "  " + month + "/" + day + "/" + year;
-    console.log(dateString)
     return dateString;    
 };
 
@@ -135,5 +134,5 @@ window.onload = function () {
     $("calendar").innerHTML = rows;
     $("book_us_btn").onclick = processEntries;
     setDate();
-    $("bookUsName").focus();
+    // $("bookUsName").focus();
 };

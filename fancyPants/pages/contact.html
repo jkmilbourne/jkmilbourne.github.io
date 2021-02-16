@@ -2,8 +2,8 @@
 --
 #Original Author:                                   #Joshua Milbourne
 #Date Created:                                      #09/09/20
-#Version:                                           #1.0
-#Date Last Modified:                                #1/31/21
+#Version:                                           #2.0
+#Date Last Modified:                                #02/14/21
 #Modified by:                                       #Joshua Milbourne
 #Modification log:                                  #
 
@@ -16,100 +16,233 @@
 <!DOCTYPE html>
 <html lang="en" id="contact_page" class="html_back_img">
     <head>
-        <meta charset="UTF-8">
-        <meta name="author" content="Joshua Milbourne">
-        <meta name="description" content="FancyPants Event Designs, designing your perfect event no matter how fancy your pants are">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta name="author" content="Joshua Milbourne" />
+        <meta
+            name="description"
+            content="FancyPants Event Designs, designing your perfect event no matter how fancy your pants are"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-------------------------------------------------------------------------- CSS Links -->
-        <link rel="stylesheet" href="../styles/normalize.css">
-        <link rel="stylesheet" href="../styles/style.css">
-        <link rel="stylesheet" href="../styles/contact.css">
+        <link rel="stylesheet" href="../css/main.css" />
         <!-------------------------------------------------------------------------- favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon_io/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon_io/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon_io/favicon-16x16.png">
-        <link rel="manifest" href="../images/favicon_io/site.webmanifest">
-        
-        <title>FancyPants Event Designs Become a Member</title>
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="../images/favicon_io/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="../images/favicon_io/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="../images/favicon_io/favicon-16x16.png"
+        />
+        <link rel="manifest" href="../images/favicon_io/site.webmanifest" />
+
+        <title>FancyPants Event Designs</title>
     </head>
     <body>
-        <div class="content">
-            <header>
-                <div><a href="home.html"><img src="../images/fancyPants.png" alt="FancyPants logo" height="64px" id="header_logo"><h1 id="headerH1">FancyPants Event Designs</h1></a></div>
-                <div id="nav_items"><a href="home.html"> Home </a>&#x2758;<a href="faq.html"> FAQs </a>&#x2758;<a href="contact.html"> Membership </a>&#x2758;<a href="wishList.html"> Wish List </a>&#x2758;<a href="photos.html"> Photos </a>&#x2758;<a href="reviews.html"> Customer Reviews </a></a>&#x2758;<a href="bookUs.html"> Book Us</a>
+        <nav class="nav-mobile" id="nav-mobile">
+            <img
+                src="../images/exit.svg"
+                alt="exit navigation"
+                id="mobile-exit-btn"
+            />
+            <ul class="nav-links-mobile">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="#" class="current">Membership</a></li>
+                <li><a href="wishList.html">Wish List</a></li>
+                <li><a href="photos.html">Gallery</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="bookUs.html">Book Us</a></li>
+            </ul>
+        </nav>
+        <div class="wrapper">
+            <header class="header">
+                <div class="content header-content">
+                    <div class="logo">
+                        <a href="home.html">
+                            <h4 class="logo-text">
+                                Fancy<span class="logo-span">Pants</span>
+                            </h4>
+                        </a>
+                    </div>
+
+                    <nav class="nav-desktop">
+                        <div class="nav-desktop-div">
+                            <ul class="nav-links-desktop">
+                                <li><a href="home.html">Home</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li>
+                                    <a href="#" class="current">Membership</a>
+                                </li>
+                                <li>
+                                    <a href="wishList.html">Wish List</a>
+                                </li>
+                                <li><a href="photos.html">Gallery</a></li>
+                                <li>
+                                    <a href="reviews.html">Reviews</a>
+                                </li>
+                                <li><a href="bookUs.html">Book Us</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <img
+                        src="../images/menu.svg"
+                        alt="menu button"
+                        id="mobile-menu-btn"
+                    />
                 </div>
             </header>
             <main>
-                <section id="contact_form" class="main">
-                    <h1>Become a Member</h1>
-                    <p>For a small membership fee, you can enjoy all the perks that com with being a member of the fastest growing event planning buisness. A <span class="brand_name">FancyPants Event Designs</span> membership entitles you to the best venues and no restrictions on blackout dates.</p><p>Plus, you will get access to a personal designer who will work with you on all your events to make sure that there is consistency it themes and standards and make sure you have all the attention you deserve for all your event planning needs. Enroll today!</p><br><br>
+                <div class="img-container image4"></div>
+                <div class="membership-content content">
+                    <section class="contact-welcome" id="contact_form">
+                        <h2>Become a Member</h2>
+                        <p>
+                            For a small membership fee, you can enjoy all the
+                            perks that com with being a member of the fastest
+                            growing event planning buisness. At
+                            <span class="logo-text"
+                                >Fancy<span class="logo-text-clr">Pants</span>
+                                Event Designs</span
+                            >
+                            membership entitles you to the best venues and no
+                            restrictions on blackout dates.
+                        </p>
+                        <p>
+                            Plus, you will get access to a personal designer who
+                            will work with you on all your events to make sure
+                            that there is consistency it themes and standards
+                            and make sure you have all the attention you deserve
+                            for all your event planning needs. Enroll today!
+                        </p>
+                        <br /><br />
+                    </section>
+                    <div class="img-container image5"></div>
+                    <section class="contact-section">
+                        <!------------------------------------------------- form for registration_form -->
+                        <form
+                            action="contact.php"
+                            method="POST"
+                            name="registration_form"
+                            id="registration_form"
+                            class="membership-form"
+                        >
+                            <h2>Sign Up Today</h2>
+                            <label for="first_name">First Name:</label>
+                            <input
+                                type="text"
+                                name="first_name"
+                                id="first_name"
+                            />
+                            <span id="first_name_error">&nbsp;</span>
 
-                    <!------------------------------------------------- form for registration_form -->
-                    <form action="contact.php" method="POST" name="registration_form" id="registration_form">
+                            <label for="last_name">Last Name:</label>
+                            <input
+                                type="text"
+                                name="last_name"
+                                id="last_name"
+                            />
+                            <span id="last_name_error">&nbsp;</span>
 
-                    <label for="first_name">First Name:</label>
-                    <input type="text" name="first_name" id="first_name">
-                    <span id="first_name_error">&nbsp;</span><br><br>
+                            <label for="email">E-Mail:</label>
+                            <input type="text" name="email" id="email" />
+                            <span id="email_error">&nbsp;</span>
 
-                    <label for="last_name">Last Name:</label>
-                    <input type="text" name="last_name" id="last_name">
-                    <span id="last_name_error">&nbsp;</span><br><br>
-                    
-                    <label for="email">E-Mail:</label>
-                    <input type="text" name="email" id="email">
-                    <span id="email_error">&nbsp;</span><br><br>
+                            <label for="password">Password:</label>
+                            <input
+                                type="password"
+                                name="password"
+                                id="password"
+                            />
+                            <span id="password_error">&nbsp;</span>
 
-                    <label for="password">Password:</label>
-                    <input type="password" name="password" id="password">
-                    <span id="password_error">&nbsp;</span><br><br>
+                            <label for="verify">Verify Password:</label>
+                            <input type="password" name="verify" id="verify" />
+                            <span id="verify_error">&nbsp;</span>
 
-                    <label for="verify">Verify Password:</label>
-                    <input type="password" name="verify" id="verify">
-                    <span id="verify_error">&nbsp;</span><br><br>
+                            <label for="phone">Phone Number:</label>
+                            <input type="text" name="phone" id="phone" />
+                            <span id="phone_error">&nbsp;</span>
 
-                    <label for="phone">Phone Number:</label>
-                    <input type="text" name="phone" id="phone">
-                    <span id="phone_error">&nbsp;</span><br><br>
+                            <label for="zip">ZIP Code:</label>
+                            <input type="text" name="zip" id="zip" />
+                            <span id="zip_error">&nbsp;</span>
 
-                    <label for="zip">ZIP Code:</label>
-                    <input type="text" name="zip" id="zip">
-                    <span id="zip_error">&nbsp;</span><br><br>
+                            <label for="card_type">Card Type:</label>
+                            <select name="card_type" id="card_type">
+                                <option value="VISA">Visa</option>
+                                <option value="MC">MasterCard</option>
+                                <option value="AE">American Express</option>
+                                <option value="DISC">Discover</option>
+                            </select>
 
-                    <label for="card_type">Card Type:</label>
-                    <select name="card_type" id="card_type">
-                        <option value="VISA">Visa</option>
-                        <option value="MC">MasterCard</option>
-                        <option value="AE">American Express</option>
-                        <option value="DISC">Discover</option>
-                    </select><br><br>
+                            <label for="card_number">Card Number:</label>
+                            <input
+                                type="text"
+                                name="card_number"
+                                id="card_number"
+                            />
+                            <span id="card_number_error">&nbsp;</span>
 
-                    <label for="card_number">Card Number:</label>
-                    <input type="text" name="card_number" id="card_number">
-                    <span id="card_number_error">&nbsp;</span><br><br>
+                            <label for="exp_date">Expiration Date:</label>
+                            <input type="text" name="exp_date" id="exp_date" />
+                            <span id="exp_date_error">&nbsp;</span>
 
-                    <label for="exp_date">Expiration Date:</label>
-                    <input type="text" name="exp_date" id="exp_date">
-                    <span id="exp_date_error">&nbsp;</span><br><br> 
-
-                    <!------------------------------------------------ buttons -->
-                    <input type="button" id="register" value="Register"><br><br>
-                    <input type="button" id="reset" value="Reset"><br><br>
-                    </form>
-                </section>
+                            <!------------------------------------------------ buttons -->
+                            <input
+                                type="button"
+                                id="register"
+                                value="Register"
+                            />
+                            <input
+                                type="button"
+                                id="reset"
+                                class="reset-btn"
+                                value="Reset"
+                            />
+                        </form>
+                    </section>
+                </div>
             </main>
         </div>
-        <footer>
-            <p>&#169;2020 FancyPants Event Designs&#8482;</p>
-            <p>Phone: <a href="tel:123-456-7890">123-456-7890</a> Email: <a href="mailto:fancy@FancyPants.com">fancy@FancyPants.com</a></p>
-            <p><address>P.O. Box #1324<br>123 FancyPants Ln<br>Springfield, MO 65814<br>USA</address></p>
-            <p><a href="https://www.facebook.com/" target="blank"><img src="../images/fb.png" alt="facebook"></a>
-                <a href="https://twitter.com/" target="blank"><img src="../images/tw.png" alt="twitter"></a>
-                <a href="https://www.youtube.com/" target="blank"><img src="../images/yt.png" alt="youtube"></a>
-                <a href="https://www.instagram.com/" target="blank"><img src="../images/ig.png" alt="instagram"></a></p>
-                <p><a href="login.html">Employee Login</a></p>
+        <footer class="footer">
+            <div class="content">
+                <p>&copy; 2020 FancyPants Event Designs&#8482;</p>
+                <p>
+                    Phone: <a href="tel:123-456-7890">123-456-7890</a> Email:
+                    <a href="mailto:fancy@FancyPants.com"
+                        >fancy@FancyPants.com</a
+                    >
+                </p>
+                <p>
+                    <a href="https://www.facebook.com/" target="blank"
+                        ><img src="../images/fb.png" alt="facebook"
+                    /></a>
+                    <a href="https://twitter.com/" target="blank"
+                        ><img src="../images/tw.png" alt="twitter"
+                    /></a>
+                    <a href="https://www.youtube.com/" target="blank"
+                        ><img src="../images/yt.png" alt="youtube"
+                    /></a>
+                    <a href="https://www.instagram.com/" target="blank"
+                        ><img src="../images/ig.png" alt="instagram"
+                    /></a>
+                </p>
+                <p><a href="login.html">Admin Login</a></p>
+            </div>
         </footer>
-        
+
         <!---------------------------------------------------------------- JavaScript -->
+        <script src="../js/navbar.js"></script>
         <script src="../js/library_navigate.js"></script>
         <script src="../js/library_fields.js"></script>
         <script src="../js/library_validate.js"></script>

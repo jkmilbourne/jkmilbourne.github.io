@@ -58,11 +58,13 @@ RegisterForm.prototype.validateField = function(fieldName, text) {
 RegisterForm.prototype.setError = function( fieldName, message ) {
     $(fieldName + "_error").setAttribute("class", "error");
     $(fieldName + "_error").firstChild.nodeValue = message;
+    $(fieldName).style.background = "pink";
 };
 
 RegisterForm.prototype.clearError = function( fieldName, message ) {
     $(fieldName + "_error").setAttribute("class", "");
     $(fieldName + "_error").firstChild.nodeValue = message || "";
+    $(fieldName).style.background = "white";
 };
 
 

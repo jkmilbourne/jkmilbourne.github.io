@@ -1,0 +1,48 @@
+@import "colors";
+@import "mixins";
+
+.faqs {
+    @include section-mobile;
+    margin-bottom: 2rem;
+
+    h2 {
+        margin-bottom: 1.25rem;
+    }
+
+    h3 {
+        margin-bottom: 1rem;
+        &::before {
+            content: url(../images/plus.png);
+        }
+    }
+    
+    h3.minus {
+    
+        &::before {
+            content: url(../images/minus.png);
+        }
+    }
+
+    p {
+        @include section-p;
+        margin-bottom: 2rem;
+
+    }
+    
+    div {
+        display: none;
+    }
+    
+    div.open {
+        display: block;
+    }
+}
+
+@media (min-width: 725px) {
+    .faqs {
+        width: 70ch;
+        margin: 0 auto;
+    }
+}
+
+

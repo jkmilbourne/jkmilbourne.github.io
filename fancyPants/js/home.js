@@ -15,7 +15,7 @@
 
 "use strict";
 // $ function
-const $ = (id) => document.getElementById(id);
+// const $ = (id) => document.getElementById(id);
 
 // process and validate entries
 const processEntries = function () {
@@ -28,26 +28,33 @@ const processEntries = function () {
     // data validation
     if (email === "") {
         $("error_email_news").firstChild.nodeValue = "Required";
+        $("email_address_news").style.background = "pink";
         isValid = false;
     } else if (!isEmail(email)) {
         $("error_email_news").firstChild.nodeValue =
             "Please enter a valid email";
+        $("email_address_news").style.background = "pink";
         isValid = false;
     } else {
         $("error_email_news").firstChild.nodeValue = "";
+        $("email_address_news").style.background = "lightgreen";
     }
 
     if (fisrtName == "") {
         $("error_first_name_news").firstChild.nodeValue = "Required";
         isValid = false;
+        $("first_name_news").style.background = "pink";
     } else {
+        $("first_name_news").style.background = "lightgreen";
         $("error_first_name_news").firstChild.nodeValue = "";
     }
 
     if (lastName == "") {
         $("error_last_name_news").firstChild.nodeValue = "Required";
+        $("last_name_news").style.background = "pink";
         isValid = false;
     } else {
+        $("last_name_news").style.background = "lightgreen";
         $("error_last_name_news").firstChild.nodeValue = "";
     }
 
@@ -57,7 +64,7 @@ const processEntries = function () {
         $("error_email_news").firstChild.nodeValue = "";
         $("error_first_name_news").firstChild.nodeValue = "";
         $("error_last_name_news").firstChild.nodeValue = "";
-        
+
         // submit form
         // swapped submit and clear JM 01/31/21 to allow form to submit to form
         submitForm();

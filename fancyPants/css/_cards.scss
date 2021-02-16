@@ -1,0 +1,12 @@
+
+
+@import "colors";
+
+.card {
+
+    figcaption.card-title {
+        color: $clr-primary;
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+}

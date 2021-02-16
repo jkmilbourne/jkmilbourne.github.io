@@ -1,0 +1,111 @@
+
+
+@import "navbar";
+@import "colors";
+@import "images";
+@import "mixins";
+@import "forms";
+@import "index";
+@import "home";
+@import "faq";
+@import "contact";
+@import "wishList";
+@import "gallery";
+@import "cards";
+@import "reviews";
+@import "tables";
+@import "bookUs";
+@import "login";
+@import "admin";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    // outline: 1px solid black;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: $clr-background;
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins";
+    font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 300;
+    line-height: 1.4em;
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: $clr-primary;
+}
+
+main {
+    padding-top: 64px;
+}
+
+.wrapper {
+    flex: 1 0 auto;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: [header-end] auto [content-end] 1fr [footer] auto;
+}
+
+p {
+    @include section-p;
+}
+
+.footer {
+    flex-shrink: 0;
+}
+
+ul {
+    list-style-type: none;
+
+    a {
+        text-decoration: none;
+        color: $clr-text-dark;
+
+        &:hover,
+        :focus {
+            color: black;
+            text-decoration: underline;
+        }
+    }
+}
+
+.logo-text-clr {
+    color: $clr-primary;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+

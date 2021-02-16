@@ -2,94 +2,251 @@
 --
 #Original Author:                                   #Joshua Milbourne
 #Date Created:                                      #09/01/20
-#Version:                                           #1.1
-#Date Last Modified:                                #1/31/21
+#Version:                                           #2.0
+#Date Last Modified:                                #02/14/21
 #Modified by:                                       #Joshua Milbourne
 #Modification log:                                  #
 
         09/01/20    v1.0    Joshua Milbourne    Created home page
         01/30/20    V1.1    Joshua Milbourne    Connected form to home.php
         01/31/21    v1.2    Joshua Milbourne    Cleaned up code and added comments
+        02/14/21    v2.0    Joshua Milbourne    Recoded all css with new design
 --
 ------------------------------------------------------------------------------------------------------------------>
-
 
 <!DOCTYPE html>
 <html lang="en" id="home_page" class="html_back_img">
     <head>
-        <meta charset="UTF-8">
-        <meta name="author" content="Joshua Milbourne">
-        <meta name="description" content="FancyPants Event Designs, designing your perfect event no matter how fancy your pants are">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta name="author" content="Joshua Milbourne" />
+        <meta
+            name="description"
+            content="FancyPants Event Designs, designing your perfect event no matter how fancy your pants are"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <!------------------------------------------------------------------------- CSS Links -->
-        <link rel="stylesheet" href="../styles/normalize.css">
-        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../css/main.css" />
 
         <!------------------------------------------------------------------------- favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon_io/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon_io/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon_io/favicon-16x16.png">
-        <link rel="manifest" href="../images/favicon_io/site.webmanifest">
-        
-        <title>FancyPants Event Designs Home Page</title>
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="../images/favicon_io/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="../images/favicon_io/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="../images/favicon_io/favicon-16x16.png"
+        />
+        <link rel="manifest" href="../images/favicon_io/site.webmanifest" />
+
+        <title>FancyPants Event Designs</title>
     </head>
     <body>
-        <div class="content">
-            <header>
-                <div><a href="home.html"><img src="../images/fancyPants.png" alt="FancyPants logo" height="64px" id="header_logo"><h1 id="headerH1">FancyPants Event Designs</h1></a></div>
-                <div id="nav_items"><a href="home.html"> Home </a>&#x2758;<a href="faq.html"> FAQs </a>&#x2758;<a href="contact.html"> Membership </a>&#x2758;<a href="wishList.html"> Wish List </a>&#x2758;<a href="photos.html"> Photos </a>&#x2758;<a href="reviews.html"> Customer Reviews </a></a>&#x2758;<a href="bookUs.html"> Book Us</a>
+        <nav class="nav-mobile" id="nav-mobile">
+            <img
+                src="../images/exit.svg"
+                alt="exit navigation"
+                id="mobile-exit-btn"
+            />
+            <ul class="nav-links-mobile">
+                <li><a href="#" class="current">Home</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Membership</a></li>
+                <li><a href="wishList.html">Wish List</a></li>
+                <li><a href="photos.html">Gallery</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="bookUs.html">Book Us</a></li>
+            </ul>
+        </nav>
+        <div class="wrapper">
+            <header class="header">
+                <div class="content header-content">
+                    <div class="logo">
+                        <a href="#">
+                            <h4 class="logo-text">
+                                Fancy<span class="logo-span">Pants</span>
+                            </h4>
+                        </a>
+                    </div>
+
+                    <nav class="nav-desktop">
+                        <div class="nav-desktop-div">
+                            <ul class="nav-links-desktop">
+                                <li>
+                                    <a href="#" class="current">Home</a>
+                                </li>
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li>
+                                    <a href="contact.html">Membership</a>
+                                </li>
+                                <li>
+                                    <a href="wishList.html">Wish List</a>
+                                </li>
+                                <li><a href="photos.html">Gallery</a></li>
+                                <li>
+                                    <a href="reviews.html">Reviews</a>
+                                </li>
+                                <li><a href="bookUs.html">Book Us</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <img
+                        src="../images/menu.svg"
+                        alt="menu button"
+                        id="mobile-menu-btn"
+                    />
                 </div>
             </header>
             <main>
-                <section id="greetings" class="main">
-                    <h1>Welcome to FancyPants Event Designs</h1>
-                    <h2>We will design your perfect event...<br>
-                        No matter how fancy your pants are!</h2>
+                <section class="home-hero-section content">
+                    <h2>
+                        Welcome to
+                        <span class="logo-text"
+                            >Fancy<span class="logo-text-clr">Pants</span></span
+                        >
+                        Event Designs!
+                    </h2>
+                    <h3>
+                        We will design your perfect event...<br />
+                        No matter how fancy your pants are!
+                    </h3>
                 </section>
-                <section class="main" id="newsletter">
-                    <h2 id="newsletter_heading">Subscribe to our newsletter</h2>
-                    <!-- form for newsletter sign up -->
-                    <form action="home.php" method="GET" name="newsletter_form" id="newsletter_form">
-                        <!------------------------------------------------------------- inputs -->
-                        <!-- email_address_news -->
-                        <label for="email_address_news" class="label">EMAIL</label>
-                        <input type="text" name="email_address_news" id="email_address_news">
-                        <span class="error" id="error_email_news">&nbsp;</span><br>
+                <div class="img-container image1"></div>
+                <div class="about-us-wrapper content">
+                    <section class="about-us-section">
+                        <h3>What we do here:</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Reprehenderit debitis doloremque error eum
+                            fuga id molestias dolor alias, dolorem voluptatum
+                            beatae, vitae, esse velit quod at laboriosam sunt
+                            aliquam? Ex quaerat asperiores similique, tempora
+                            quo, minus quam laborum mollitia, repellendus eaque
+                            modi? Harum, repudiandae temporibus.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Amet velit autem animi ipsum doloribus modi
+                            excepturi quam quisquam facilis sed? Numquam minus
+                            iure recusandae asperiores expedita nam quo
+                            adipisci, fugiat mollitia. Totam pariatur nisi
+                            quibusdam ullam quis esse expedita nesciunt tempore
+                            cum eaque saepe iste possimus perferendis, unde in
+                            reiciendis, eum corporis, sequi explicabo incidunt?
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Odio ipsa rerum illum placeat veritatis in
+                            numquam amet ex. Suscipit quas ut maiores excepturi
+                            natus possimus dicta? Enim explicabo, veritatis modi
+                            fugiat officiis animi placeat tenetur perferendis
+                            exercitationem saepe itaque adipisci praesentium
+                            deleniti quis ducimus et.
+                        </p>
+                    </section>
+                    <div class="img-container image2" id="image2"></div>
+                    <section class="newsletter-form-section">
+                        <h3 class="newsletter_heading">
+                            Subscribe to our newsletter
+                        </h3>
+                        <!-- form for newsletter sign up -->
+                        <form
+                            action="home.php"
+                            method="POST"
+                            name="newsletter_form"
+                            id="newsletter_form"
+                        >
+                            <!------------------------------------------------------------- inputs -->
+                            <!-- email_address_news -->
+                            <label for="email_address_news" class="label"
+                                >EMAIL</label
+                            >
+                            <input
+                                type="text"
+                                name="email_address_news"
+                                id="email_address_news"
+                            />
+                            <span class="error" id="error_email_news">&nbsp;</span>
 
-                        <!-- first_name_news -->
-                        <label for="first_name_news" class="label">First Name</label>
-                        <input type="text" name="first_name_news" id="first_name_news">
-                        <span class="error" id="error_first_name_news">&nbsp;</span><br>
+                            <!-- first_name_news -->
+                            <label for="first_name_news" class="label"
+                                >First Name</label
+                            >
+                            <input
+                                type="text"
+                                name="first_name_news"
+                                id="first_name_news"
+                            />
+                            <span class="error" id="error_first_name_news"
+                                >&nbsp;</span
+                            >
 
-                        <!-- last_name_news -->
-                        <label for="last_name_news" class="label">Last Name</label>
-                        <input type="text" name="last_name_news" id="last_name_news">
-                        <span class="error" id="error_last_name_news">&nbsp;</span>
-                        <label class="label">&nbsp;</label>
+                            <!-- last_name_news -->
+                            <label for="last_name_news" class="label"
+                                >Last Name</label
+                            >
+                            <input
+                                type="text"
+                                name="last_name_news"
+                                id="last_name_news"
+                            />
+                            <span class="error" id="error_last_name_news"
+                                >&nbsp;</span
+                            >
 
-                        <!-------------------------------------------------------------- buttons -->
-                        <!-- join_newsletter button -->
-                        <input type="button" class="btn" id="join_newsletter" value="Subscribe"><br>
-                        
-                    </form> 
-                </section>
+                            <!-------------------------------------------------------------- buttons -->
+                            <!-- join_newsletter button -->
+                            <input
+                                type="button"
+                                class="btn"
+                                id="join_newsletter"
+                                value="Subscribe"
+                            />
+                        </form>
+                    </section>
+                </div>
             </main>
         </div>
 
-        <footer>
-            <p>&#169;2020 FancyPants Event Designs&#8482;</p>
-            <p>Phone: <a href="tel:123-456-7890">123-456-7890</a> Email: <a href="mailto:fancy@FancyPants.com">fancy@FancyPants.com</a></p>
-            <p><address>P.O. Box #1324<br>123 FancyPants Ln<br>Springfield, MO 65814<br>USA</address></p>
-            <p><a href="https://www.facebook.com/" target="blank"><img src="../images/fb.png" alt="facebook"></a>
-                <a href="https://twitter.com/" target="blank"><img src="../images/tw.png" alt="twitter"></a>
-                <a href="https://www.youtube.com/" target="blank"><img src="../images/yt.png" alt="youtube"></a>
-                <a href="https://www.instagram.com/" target="blank"><img src="../images/ig.png" alt="instagram"></a></p>
-                <p><a href="login.html">Employee Login</a></p>
+        <footer class="footer">
+            <div class="content">
+                <p>&copy; 2020 FancyPants Event Designs&#8482;</p>
+                <p>
+                    Phone: <a href="tel:123-456-7890">123-456-7890</a> Email:
+                    <a href="mailto:fancy@FancyPants.com"
+                        >fancy@FancyPants.com</a
+                    >
+                </p>
+                <p>
+                    <a href="https://www.facebook.com/" target="blank"
+                        ><img src="../images/fb.png" alt="facebook"
+                    /></a>
+                    <a href="https://twitter.com/" target="blank"
+                        ><img src="../images/tw.png" alt="twitter"
+                    /></a>
+                    <a href="https://www.youtube.com/" target="blank"
+                        ><img src="../images/yt.png" alt="youtube"
+                    /></a>
+                    <a href="https://www.instagram.com/" target="blank"
+                        ><img src="../images/ig.png" alt="instagram"
+                    /></a>
+                </p>
+                <p><a href="login.html">Admin Login</a></p>
+            </div>
         </footer>
 
         <!----------------------------------------------------- JavaScript -->
-        <script src="../js/library_data_RegEx.js"></script>
+        <script src="../js/navbar.js"></script>
         <script src="../js/home.js"></script>
+        <script src="../js/library_data_RegEx.js"></script>
     </body>
 </html>

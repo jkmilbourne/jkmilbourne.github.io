@@ -1,0 +1,75 @@
+@import "colors";
+@import "mixins";
+
+section.home-hero-section {
+    h2 {
+        text-align: center;
+        margin: 5rem 10px 0.5rem;
+    }
+
+    h3 {
+        text-align: center;
+        margin: 0 10px 5rem;
+    }
+}
+
+section.about-us-section {
+    @include section-mobile;
+    margin-bottom: 5rem;
+
+    h3 {
+        margin-bottom: 2rem;
+    }
+
+    div.img-container {
+        margin-top: 3rem;
+    }
+}
+
+.newsletter-form-section {
+    @include section-mobile;
+
+    h3 {
+        margin-bottom: 2rem;
+    }
+    margin-bottom: 3rem;
+
+    @media (min-width: 660px) {
+        width: 50%;
+
+        input {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    
+    .about-us-wrapper {
+        display: grid;
+        grid-template-columns: 60% auto;
+        grid-template-rows: auto;
+    }
+
+    section.about-us-section {
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+    section.newsletter-form-section {
+        grid-column-start: 2;
+        grid-row-start: 1;
+        width: 80%;
+    }
+
+    .image2 {
+        display: none;
+    }
+
+    .home-hero-section {
+        margin: 5rem auto;
+    }
+
+}
+
+
+

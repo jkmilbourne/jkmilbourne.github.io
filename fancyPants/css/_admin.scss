@@ -1,0 +1,61 @@
+
+
+@import "colors";
+@import "mixins";
+
+section.section-admin {
+    @include section-mobile;
+    width: 97%;
+    max-width: 1200px;
+
+    ul.emp-list {
+        margin-bottom: 1rem;
+    }
+
+    h2 {
+        margin: 1rem 0 2rem;
+    }
+
+    h3.admin-messages-h3 {
+        margin-bottom: 1rem;
+    }
+
+    input.admin-message-delete-btn {
+        background: $clr-primary;
+        color: $clr-text-light;
+        border-radius: 50px;
+    }
+
+    table.admin-messages {
+        font-weight: 500;
+        margin-bottom: 2rem;
+
+        th,
+        td {
+            padding-left: 5px;
+        }
+    }
+}
+
+.emp-list {
+    a {
+        font-size: 1.75rem;
+        letter-spacing: 1.3;
+        line-height: 50px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .admin-content {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .emp-list {
+        a {
+            font-size: 1.25rem;
+            line-height: initial;
+        }
+    }
+}

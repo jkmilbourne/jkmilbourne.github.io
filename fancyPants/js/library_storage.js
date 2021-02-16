@@ -13,7 +13,6 @@
 *********************************************************************/
 
 "use strict";
-const $ = (id) => document.getElementById(id);
 
 const storagePrototype = {
     get: function() {
