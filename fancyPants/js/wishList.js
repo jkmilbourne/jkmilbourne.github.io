@@ -65,5 +65,5 @@ window.onload = function () {
     tasklist.load();
     tasklist.display();
 
-    $("task").focus();
+    // $("task").focus();
 };

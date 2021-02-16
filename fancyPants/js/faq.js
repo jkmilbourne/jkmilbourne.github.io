@@ -14,7 +14,6 @@
 
 
 "use strict";
-const $ = (id) => document.getElementById(id);
 
 
 // toggles for faq

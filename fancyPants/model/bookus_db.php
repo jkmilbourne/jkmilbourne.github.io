@@ -1,11 +1,13 @@
 <!----------------------------------------------------------------------------------------------------------------
 --
 #Original Author:                                   #Joshua Milbourne
-#Date Created:                                      #
-#Version:                                           #
-#Date Last Modified:                                #
-#Modified by:                                       #
+#Date Created:                                      #02/12/21
+#Version:                                           #1.0
+#Date Last Modified:                                #02/12/21
+#Modified by:                                       #Joshua Milbourne
 #Modification log:                                  #
+
+    02/12/21    v1.0    Joshua Milbourne        Created bookus_db.php
 --
 ------------------------------------------------------------------------------------------------------------------>
 <?php

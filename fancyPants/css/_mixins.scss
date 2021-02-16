@@ -1,0 +1,14 @@
+@mixin section-mobile {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+}
+
+@mixin section-p {
+    max-width: 70ch;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    padding: 0;
+}

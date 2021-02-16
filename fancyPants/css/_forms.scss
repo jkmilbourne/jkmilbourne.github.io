@@ -1,0 +1,62 @@
+@import "colors";
+
+form {
+    span {
+        color: $clr-green;
+    }
+
+    span.error {
+        color: $clr-red;
+    }
+    label,
+    input,
+    select,
+    span,
+    textarea {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+
+input,
+textarea,
+select {
+    border-radius: 3px;
+    padding: 0.5em;
+    font-size: 1.25em;
+    box-shadow: 0 0 3px $clr-grey;
+}
+
+textarea + input[type="button"],
+input[type="button"] + input[type="button"],
+input[type="button"] + input[type="button"],
+span + input[type="button"],
+select + label,
+span + label {
+    margin-top: 1em;
+}
+
+input[type="button"] + label + span {
+    margin-top: 0;
+}
+
+input[type="button"] {
+    background: $clr-primary;
+    color: $clr-white;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+select {
+    background: white;
+}
+
+textarea {
+    font-size: 1.5rem;
+}
+
+#reset {
+    background: $clr-red;
+}

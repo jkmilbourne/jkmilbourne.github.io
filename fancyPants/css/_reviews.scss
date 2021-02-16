@@ -1,0 +1,145 @@
+@import "colors";
+@import "mixins";
+
+.rimg {
+    width: 100%;
+    height: 361px;
+    display: none;
+    box-shadow: $bs-primary
+}
+
+section.section-reviews {
+    @include section-mobile;
+
+    h2 {
+        margin: 1rem 1rem 5rem;
+    }
+
+    blockquote {
+        font-size: 1.25rem;
+        display: block;
+        margin: 1rem auto;
+        background: $clr-white;
+        font-weight: 600;
+        padding: 2rem;
+        color: $clr-primary;
+        box-shadow: $bs-primary;
+        border-radius: 5px;
+        width: 80%;
+
+        cite {
+            margin: 1rem 0 0 3rem;
+            display: block;
+            font-weight: 300;
+            color: initial;
+            font-size: 1rem;
+
+            &::before {
+                content: "~ ";
+            }
+        }
+    }
+}
+
+img.review-avatar {
+    display: block;
+    width: 80px;
+    margin: 5px auto 1rem;
+    border-radius: 50%;
+    background: $clr-primary;
+    box-shadow: $bs-primary;
+}
+
+@media (min-width: 660px) {
+    section.section-reviews {
+        width: 100%;
+
+        h2 {
+            text-align: center;
+        }
+        blockquote {
+            display: block;
+            width: 30rem;
+            margin: 1rem;
+        }
+        .reviews {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    section.section-reviews {
+        .rimg {
+            display: block;
+        }
+
+        blockquote {
+            margin: 1rem auto;
+        }
+
+        .reviews {
+            display: grid;
+            grid-template-columns: 480px 120px 120px 480px;
+            grid-template-rows: auto auto auto auto;
+        }
+
+        .bq1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+
+        .bq2 {
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+
+        .bq3 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+
+        .bq4 {
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 4;
+            grid-row-end: 5;
+        }
+
+        .rimg1 {
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+
+        .rimg2 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+
+        .rimg3 {
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+
+        .rimg4 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 4;
+            grid-row-end: 5;
+        }
+    }
+}

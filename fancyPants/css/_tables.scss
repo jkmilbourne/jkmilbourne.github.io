@@ -1,0 +1,14 @@
+@import "colors";
+@import "mixins";
+
+table {
+    background: $clr-white;
+    
+    th, td {
+        border: 1px solid $clr-primary;
+        border-collapse: collapse;
+        width: 3rem;
+        height: 3rem;
+        vertical-align: top;
+    }
+}

@@ -12,7 +12,7 @@
 ***
 *********************************************************************/
 
-const $ = function (id) { return document.getElementById(id); };
+"use strict";
 
 const getMonthText = function(currentMonth) {
     if (currentMonth === 0) { return "January"; }
