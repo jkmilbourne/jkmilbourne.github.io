@@ -1,5 +1,3 @@
-
-
 @import "colors";
 @import "mixins";
 
@@ -24,6 +22,7 @@ section.section-admin {
         background: $clr-primary;
         color: $clr-text-light;
         border-radius: 50px;
+        cursor: pointer;
     }
 
     table.admin-messages {

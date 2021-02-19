@@ -14,6 +14,10 @@
 
 <?php 
 
+require_once('../util/secure_conn.php');
+require_once('../util/valid_admin.php');
+
+
 $action = filter_input(INPUT_POST, 'action');
 if ($action == NULL) {
     $action = 'list-comments';
@@ -83,7 +87,7 @@ if ($action == 'list-comments') {
             <header class="header">
                 <div class="content header-content">
                     <div class="logo">
-                        <a href="#">
+                        <a href="home.html">
                             <h4 class="logo-text">
                                 Fancy<span class="logo-span">Pants</span>
                             </h4>
@@ -190,7 +194,7 @@ if ($action == 'list-comments') {
                         ><img src="../images/ig.png" alt="instagram"
                     /></a>
                 </p>
-                <p><a href="login.html">Admin Login</a></p>
+                <p><a href="admin.php">Admin Login</a></p>
             </div>
         </footer>
         <script src="../js/navbar.js"></script>

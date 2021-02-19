@@ -86,7 +86,7 @@ if ($bookUsName == NULL || $bookUsEmail == NULL ||$bookUsPhone == NULL) {
                 <li><a href="wishList.html">Wish List</a></li>
                 <li><a href="photos.html">Gallery</a></li>
                 <li><a href="reviews.html">Reviews</a></li>
-                <li><a href="#" class="current">Book Us</a></li>
+                <li><a href="bookUs.html" class="current">Book Us</a></li>
             </ul>
         </nav>
         <div class="wrapper">
@@ -115,7 +115,7 @@ if ($bookUsName == NULL || $bookUsEmail == NULL ||$bookUsPhone == NULL) {
                                 <li>
                                     <a href="reviews.html">Reviews</a>
                                 </li>
-                                <li><a href="#" class="current">Book Us</a></li>
+                                <li><a href="bookUs.html" class="current">Book Us</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -157,6 +157,8 @@ if ($bookUsName == NULL || $bookUsEmail == NULL ||$bookUsPhone == NULL) {
                         ><img src="../images/ig.png" alt="instagram"
                     /></a>
                 </p>
+                
+                <p><a href="admin.php">Admin Login</a></p>
             </div>
         </footer>
         <!--------------------------------------------------------------------- JavaScript  -->

@@ -29,6 +29,7 @@ class Database {
             } catch (PDOException $e) {
                 // $error_message = $e->getMessage();
                 // include('../errors/database_error.php');
+                header('Location: ../errors/database_error.html');
                 exit();
             }
         }

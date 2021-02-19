@@ -77,7 +77,7 @@ if ($email_address_news == NULL || $first_name_news == NULL || $last_name_news =
                 id="mobile-exit-btn"
             />
             <ul class="nav-links-mobile">
-                <li><a href="#" class="current">Home</a></li>
+                <li><a href="home.html" class="current">Home</a></li>
                 <li><a href="faq.html">FAQ</a></li>
                 <li><a href="contact.html">Membership</a></li>
                 <li><a href="wishList.html">Wish List</a></li>
@@ -90,7 +90,7 @@ if ($email_address_news == NULL || $first_name_news == NULL || $last_name_news =
             <header class="header">
                 <div class="content header-content">
                     <div class="logo">
-                        <a href="#">
+                        <a href="home.html">
                             <h4 class="logo-text">
                                 Fancy<span class="logo-span">Pants</span>
                             </h4>
@@ -101,7 +101,7 @@ if ($email_address_news == NULL || $first_name_news == NULL || $last_name_news =
                         <div class="nav-desktop-div">
                             <ul class="nav-links-desktop">
                                 <li>
-                                    <a href="#" class="current">Home</a>
+                                    <a href="home.html" class="current">Home</a>
                                 </li>
                                 <li><a href="faq.html">FAQ</a></li>
                                 <li>
@@ -156,7 +156,7 @@ if ($email_address_news == NULL || $first_name_news == NULL || $last_name_news =
                         ><img src="../images/ig.png" alt="instagram"
                     /></a>
                 </p>
-                <p><a href="login.html">Admin Login</a></p>
+                <p><a href="admin.php">Admin Login</a></p>
             </div>
         </footer>
 
