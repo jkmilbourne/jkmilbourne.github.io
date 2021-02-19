@@ -1,0 +1,135 @@
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author:                                   #Joshua Milbourne
+#Date Created:                                      #09/30/20
+#Version:                                           #1.0
+#Date Last Modified:                                #12/08/20
+#Modified by:                                       #Joshua Milbourne
+#Modification log:                                  #
+
+        09/30/20  Joshua Milbourne  v0.5  Created home.html
+        12/08/20  Joshua Milbourne  v1.0  Moved AboutMe to this page. Finalized navbar and moved on bootstrap 4(this applies to all pages). Finalized Footer and removed Phone number/facebook/instagram(this applies to all pages).
+--
+------------------------------------------------------------------------------------------------------------------>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Josh Milbourne is a web designer and developer in the Bosie Idaho area. This is his portfolio.">
+    <meta name="author" content="Joshua Milbourne">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.ico" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- custom styles -->
+    <link rel="stylesheet" href="styles/portfolioStyles.css">
+    <link rel="stylesheet" href="styles/cards.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- javaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>Josh Milbourne's Portfolio Home</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#hero-section"><img src="images/logo.png" alt="logo" width="35px"></a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#hero-section">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="education.html">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="experience.html">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-me-section">About Me</a>
+            </li>
+          </ul>
+        </div>
+        <!-- social links -->
+        <nav class="justify-content-right">
+          <a href="https://www.linkedin.com/in/joshua-milbourne-9766b8185/" target="blank"><img src="images/icons8-linkedin-64.png" alt="linkedIn logo" width="35px"></a>
+          <a href="https://github.com/jkmilbourne" target="blank"><img src="images/icons8-github-64.png" alt="github logo" width="35px"></a>
+          <a href="https://codesandbox.io/dashboard/home?workspace=f0efd229-c49e-472e-b4d8-1f68613abd48" target="blank"><img src="images/codesandbox-512.webp" alt="linkedIn logo" width="30px"></a>
+        </nav>
+      </nav>
+    </header>
+    <main>
+      <section class="main-sections" id="hero-section">
+      <h1>My name is Josh Milbourne. I am a Freelance Web Designer and Software Developer based in Boise, Idaho.</h1>
+      <img src="images/comp01.jpg" alt="man using computer" id="hero-img">
+      <h4>Fully Responsive and custom designed websites.</h1>
+      <a href="projects.html" class="btn" id="portfolio_btn">View Portfolio &#10148</a>  
+      </section> <!-- hero-section -->
+      
+      <div id="cards-section">
+
+        <!-- education -->
+        <div class="card home-card">
+          <img class="card-img-top" src="images/cap200.png" alt="graduation cap image">
+          <div class="card-body">
+            <h4 class="card-title">Education</h4>
+            <a href="education.html" class="btn">Learn more &#10148;</a>
+          </div>
+        </div>
+
+        <!-- about me -->
+        <div class="card home-card">
+          <img class="card-img-top" src="images/aboutMe200.png" alt="about me image">
+          <div class="card-body">
+            <h4 class="card-title">About Me</h4>
+            <a href="#about-me-section" class="btn">Learn more &#10148;</a>
+          </div>
+        </div>
+
+        <!-- Contact Me -->
+        <div class="card home-card">
+          <img class="card-img-top" src="images/contact-book-line200.png" alt="contact me image">
+          <div class="card-body">
+            <h4 class="card-title">Contact Me</h4>
+            <a href="contact.html" class="btn">Learn more &#10148;</a>
+          </div>
+        </div>
+      
+      <section id="about-me-section">
+        <img src="images/YosemiteRapids_1200.png" alt="about me icon" id="about_me_banner">
+        <h1>About Me</h1>
+        <p id="about_me_p">My name is Josh Milbourne. I am a full stack developer based in Boise, ID. I enjoy making beautiful things. Be it websites, UIs, music, or working on my classic ’65 Impala. I spent the first part of my life living in the San Francisco Bay Area, but I enjoy being in mountain country now. I would love to work with you to build the website of your dreams. Let me know what I can build for you.</p>
+      </section> <!--about-me-section-->
+    </main>
+
+    <footer id="footer">
+      <ul>
+        <li><p>All Rights Reserved <i class="fa fa-copyright" aria-hidden="true"></i> 2020</p></li>
+        <li>Email: <a class="hover" href="mailto:josh@joshuamilbourne.com">josh@joshuamilbourne.com</a></li>
+        <li>  
+          <a href="https://www.linkedin.com/in/joshua-milbourne-9766b8185/" target="blank"><img src="images/icons8-linkedin-64.png" alt="Linkedin Icon"></a>
+          <a href="https://github.com/jkmilbourne" target="blank"><img src="images/icons8-github-64.png" alt="GitHub Icon"></a>
+          <a href="https://codesandbox.io/dashboard/home?workspace=f0efd229-c49e-472e-b4d8-1f68613abd48" target="blank"><img src="images/codesandbox-512.webp" width="50px" alt="codesandbox logo"></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

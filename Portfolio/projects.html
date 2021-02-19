@@ -1,0 +1,466 @@
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author:                                   #Joshua Milbourne
+#Date Created:                                      #10/01/20
+#Version:                                           #1.0
+#Date Last Modified:                                #12/09/20
+#Modified by:                                       #Joshua Milbourne
+#Modification log:                                  #
+
+        10/01/20  Joshua Milbourne  v0.5  created projects.html
+        12/09/20  Joshua Milbourne  v1.0  updated all current projects and moved all cards to bootsrtap 4
+ --
+------------------------------------------------------------------------------------------------------------------>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Josh Milbourne is a web designer and developer in the Bosie Idaho area. This is his portfolio."
+    />
+    <meta name="author" content="Joshua Milbourne" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.ico" />
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- custom styles -->
+    <link rel="stylesheet" href="styles/portfolioStyles.css" />
+    <link rel="stylesheet" href="styles/projects.css" />
+    <link rel="stylesheet" href="styles/cards.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <!-- javaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <title>Josh Milbourne's Portfolio Projects</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
+        <!-- Brand -->
+        <a class="navbar-brand" href="home.html"
+          ><img src="images/logo.png" alt="logo" width="35px"
+        /></a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="education.html">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="experience.html">Resume</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="projects.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="home.html#about-me-section">About Me</a>
+            </li>
+          </ul>
+        </div>
+        <!-- social links -->
+        <nav class="justify-content-right">
+          <a
+            href="https://www.linkedin.com/in/joshua-milbourne-9766b8185/"
+            target="blank"
+            ><img
+              src="images/icons8-linkedin-64.png"
+              alt="linkedIn logo"
+              width="35px"
+          /></a>
+          <a href="https://github.com/jkmilbourne" target="blank"
+            ><img
+              src="images/icons8-github-64.png"
+              alt="github logo"
+              width="35px"
+          /></a>
+          <a
+            href="https://codesandbox.io/dashboard/home?workspace=f0efd229-c49e-472e-b4d8-1f68613abd48"
+            target="blank"
+            ><img
+              src="images/codesandbox-512.webp"
+              alt="linkedIn logo"
+              width="30px"
+          /></a>
+        </nav>
+      </nav>
+    </header>
+    <main class="main-sections" id="projects-main">
+      <img src="images/projects.png" alt="projects icon" />
+      <h1>Projects</h1>
+      <!------------------------------------------------------------------------------ cards -->
+      <div id="cards-section">
+        <!-- comfyHouse -->
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="images/projects/comfyHouse.png"
+            alt="comfyHouse project image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">ComfyHouse</h5>
+            <p class="card-text">Vanilla JS, Bootstrap 4</p>
+            <a
+              href="https://h4sq1.csb.app/"
+              target="blank"
+              class="btn btn-primary"
+              >See Project</a
+            >
+          </div>
+        </div>
+
+        <!-- Castle Duel -->
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="images/projects/castleDuel.png"
+            alt="castle duel project image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Castle Duel</h5>
+            <p class="card-text">Vue 3 WebApp</p>
+            <a
+              href="https://9xr8i.csb.app/"
+              target="blank"
+              class="btn btn-primary"
+              >See Project</a
+            >
+          </div>
+        </div>
+
+        <!-- Breakout -->
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="images/projects/breakout.png"
+            alt="breakout project image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Breakout Clone</h5>
+            <p class="card-text">Phaser.js WebApp</p>
+            <a
+              href="https://jkmilbourne.github.io/breakout/index.html"
+              target="blank"
+              class="btn btn-primary"
+              >See Project</a
+            >
+          </div>
+        </div>
+
+        <!-- Gary's Boxing -->
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="images/projects/garysBoxing.png"
+            alt="Garys Boxing project image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Gary's Boxing</h5>
+            <p class="card-text">Vue 3 Website</p>
+            <a
+              href="https://xrt6l.csb.app/"
+              target="blank"
+              class="btn btn-primary"
+              >See Project</a
+            >
+          </div>
+        </div>
+
+        <!-- Dale's Nuts -->
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="images/projects/dalesNuts.png"
+            alt="Dale's Nuts project image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Dale's Nuts</h5>
+            <p class="card-text">Foundation Website</p>
+            <a
+              href="https://lkogs.csb.app/"
+              target="blank"
+              class="btn btn-primary"
+              >See Project</a
+            >
+          </div>
+        </div>
+
+        <!-- Angular Website -->
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="images/projects/angularWebsite.png"
+            alt="Angular project image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Angular Website</h5>
+            <p class="card-text">Angular, Bootstrap 3</p>
+            <a
+              href="https://l2cm1.csb.app/"
+              target="blank"
+              class="btn btn-primary"
+              >See Project</a
+            >
+          </div>
+        </div>
+
+        <!-- Vue E-Commerce -->
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="images/projects/vue3ECommerce.png"
+            alt="Vue 3 project image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Vue 3 Website</h5>
+            <p class="card-text">Vue 3, Animate.js</p>
+            <a
+              href="https://fu70h.csb.app/"
+              target="blank"
+              class="btn btn-primary"
+              >See Project</a
+            >
+          </div>
+        </div>
+
+        <!-- Parallax Scrolling -->
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="images/projects/parallaxScrolling.png"
+            alt="parallax scrolling project image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Parallax Scrolling Website</h5>
+            <p class="card-text">Vanilla JS, Bootstrap 3</p>
+            <a
+              href="https://12un7.csb.app/"
+              target="blank"
+              class="btn btn-primary"
+              >See Project</a
+            >
+          </div>
+        </div>
+
+        <!-- Corvette -->
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="images/projects/2020Corvette.png"
+            alt="corvete website redesign project image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Redesign of Corvette Website</h5>
+            <p class="card-text">Bootstrap Studio</p>
+            <a
+              href="https://qu3c9.csb.app/"
+              target="blank"
+              class="btn btn-primary"
+              >See Project</a
+            >
+          </div>
+        </div>
+
+        <!-- FancyPants -->
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="images/projects/fancyPants.png"
+            alt="fancy pants project image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">FancyPants Event Designs</h5>
+            <p class="card-text">Vanilla JS</p>
+            <a
+              href="https://q97z8.csb.app/"
+              target="blank"
+              class="btn btn-primary"
+              >See Project</a
+            >
+          </div>
+        </div>
+
+        <!-- Mario Cart -->
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="images/projects/marioCart.png"
+            alt="mario cart project image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Mario Cart</h5>
+            <p class="card-text">CSS Animation</p>
+            <a
+              href="https://4x49y.csb.app/"
+              target="blank"
+              class="btn btn-primary"
+              >See Project</a
+            >
+          </div>
+        </div>
+
+        <!-- Apple -->
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="images/projects/apple.png"
+            alt="apple project image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Apple Site Reverse-Engineer</h5>
+            <p class="card-text">Bootstrap Studio</p>
+            <a
+              href="https://jkmilbourne.github.io/AppleWebsite/index.html"
+              target="blank"
+              class="btn btn-primary"
+              >See Project</a
+            >
+          </div>
+        </div>
+        <hr />
+        <h1>SDLC Project</h1>
+        <h3>
+          This is the Sofware Development Lifecycle project that was conducted
+          for the ComfyHouse project in the above section
+        </h3>
+        <img
+          class="sdlc-forms"
+          src="images/sdlc/Feasibility Analysis Assessment Factors.png"
+          alt="Feasibility image"
+        /><br />
+        <label class="sdlc-forms-labels"
+          >Feasibility Analysis Assessment Factors</label
+        ><br /><br />
+        <img
+          class="sdlc-forms"
+          src="images/sdlc/Mind Map.png"
+          alt="MindMap image"
+        /><br />
+        <label class="sdlc-forms-labels">Mind Map</label><br /><br />
+        <img
+          class="sdlc-forms"
+          src="images/sdlc/Risk Assessment.png"
+          alt="Risk Assessment image"
+        /><br />
+        <label class="sdlc-forms-labels">Risk Assessment</label><br /><br />
+        <img
+          class="sdlc-forms"
+          src="images/sdlc/System Request.png"
+          alt="System Request image"
+        /><br />
+        <label class="sdlc-forms-labels">System Request</label><br /><br />
+        <img
+          class="sdlc-forms"
+          src="images/sdlc/Event-Responce List.png"
+          alt="event responce image"
+        /><br />
+        <label class="sdlc-forms-labels">Event Responce List</label><br /><br />
+        <img
+          class="sdlc-forms"
+          src="images/sdlc/Interview Form.png"
+          alt="interview form image"
+        /><br />
+        <label class="sdlc-forms-labels">Interview Form</label><br /><br />
+        <img
+          class="sdlc-forms"
+          src="images/sdlc/Program Specification.png"
+          alt="program specifiation image"
+        /><br />
+        <label class="sdlc-forms-labels">Program specification</label
+        ><br /><br />
+        <img
+          class="sdlc-forms"
+          src="images/sdlc/Use Case.png"
+          alt="use case image"
+        /><br />
+        <label class="sdlc-forms-labels">Use Case</label><br /><br />
+        <img
+          class="sdlc-forms"
+          src="images/sdlc/UI Concept.png"
+          alt="UI concept image"
+        /><br />
+        <label class="sdlc-forms-labels">UI Concept Visualization</label
+        ><br /><br />
+      </div>
+      <!--Cards-->
+      <a href="#projects-main" class="btn">Back to the top</a>
+    </main>
+    <footer id="footer">
+      <ul>
+        <li>
+          <p>
+            All Rights Reserved
+            <i class="fa fa-copyright" aria-hidden="true"></i> 2020
+          </p>
+        </li>
+        <li>
+          Email:
+          <a class="hover" href="mailto:josh@joshuamilbourne.com"
+            >josh@joshuamilbourne.com</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/joshua-milbourne-9766b8185/"
+            target="blank"
+            ><img src="images/icons8-linkedin-64.png" alt="Linkedin Icon"
+          /></a>
+          <a href="https://github.com/jkmilbourne" target="blank"
+            ><img src="images/icons8-github-64.png" alt="GitHub Icon"
+          /></a>
+          <a
+            href="https://codesandbox.io/dashboard/home?workspace=f0efd229-c49e-472e-b4d8-1f68613abd48"
+            target="blank"
+            ><img
+              src="images/codesandbox-512.webp"
+              width="50px"
+              alt="codesandbox logo"
+          /></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,150 @@
+/*********************************************************************
+***
+*Original Author:                                 *Joshua Milbourne
+*Date Created:                                    *09/30/20
+*Version:                                         *1.0
+*Date Last Modified:                              *12/09/20
+*Modified by:                                     *Joshua Milbourne
+*Modification log:                                *
+
+        09/30/20  Joshua Milbourne  v0.5  Created portfolioStyles.html
+        12/09/20  Joshua Milbourne  v1.0  Finalized all styling for all pages
+***
+*********************************************************************/
+/* all styles */
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+html {
+    height: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    position: relative;
+    padding-bottom: 15rem;
+    min-height: 100%;
+    background-image: url("../images/back.svg");
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1em;
+}
+@media screen and (max-width: 760px) {
+    body {
+        font-size: 1em;
+    }
+}
+
+/* footer */
+#footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-top: 15px;
+    background-color: #efefef6e;
+    text-align: center;
+    font-size: medium;
+}
+main, footer {
+    text-align: center;
+}
+
+/* links */
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover, a:focus {
+    color: #a01b1b;
+}
+a:active {
+    color: red;
+}
+
+/* lists */
+ul {
+    padding-left: 0;
+}
+
+/* headers */
+h1 {
+    margin: 1em 0;
+}
+
+/* classes */
+.body_img {
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.btn {
+    background-color: lightseagreen;
+    border: none;
+    border-radius: 2em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    font-size: 1em;
+    padding: .25em 1em;
+    margin: 1em auto;
+}
+.main-sections {
+    min-height: 100vh;
+    max-width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sdlc-forms {
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 40px;
+}
+.sdlc-forms-labels {
+    font-weight: bolder;
+    font-size: x-large;
+    margin-top: 20px;
+}
+
+
+
+/* ids */
+#about-me-section {
+    max-width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+#about_me_p {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+#about_me_banner {
+    max-width: 75%;
+}
+#hero-section, #cards-section, #about-me-section, .main-sections, .main-sections-error {
+    padding-top: 80px;
+}
+@media only screen and (max-width: 400px) {
+    #hero-section h1 {
+        font-size: 1.5em;
+    }
+    #hero-section h4 {
+        font-size: 1em;
+    }
+}
+#hero-img {
+    width: 800px;
+    max-width: 85%;
+    padding-bottom: 2em;
+}
+#cards-section {
+    padding-bottom: 4em;
+}
+#error-img {
+    max-width: 95%;
+}
+
+#about_me_banner {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+

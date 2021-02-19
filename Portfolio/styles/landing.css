@@ -1,0 +1,62 @@
+/*********************************************************************
+***
+*Original Author:                                 *Joshua Milbourne
+*Date Created:                                    *09/30/20
+*Version:                                         *1.0
+*Date Last Modified:                              *
+*Modified by:                                     *
+*Modification log:                                *
+
+        09/30/20  Joshua Milbourne  v1.0  Created landing.css
+***
+*********************************************************************/
+
+
+/* all styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* landing video */
+#rain {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+/* overlay text on video */
+.content {
+    position: fixed;
+    bottom: 30%;
+    background: rgba(139, 139, 139, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 1em 0;
+    text-align: center;
+}
+h2 {
+    padding: .5em;
+    font-size: 2.5em;
+}
+
+/* button styles */
+#enter_site_btn {
+    width: 200 px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #f1f1f1;
+    cursor: pointer;
+}
+#enter_site_btn:hover, #enter_site_btn:focus {
+    background: #ddd;
+    color: black;
+}
+
+/* logo img */
+#landing_logo {
+    padding: .25em;
+}

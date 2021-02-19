@@ -1,0 +1,74 @@
+/*********************************************************************
+***
+*Original Author:                                 *Joshua Milbourne
+*Date Created:                                    *10/01/20
+*Version:                                         *1.0
+*Date Last Modified:                              *
+*Modified by:                                     *
+*Modification log:                                *
+
+        10/01/20  Joshua Milbourne  v1.0  Created lists.css
+***
+*********************************************************************/
+
+/* list styles */
+#education_main {
+  width: 30em;
+  margin: 0 auto;
+}
+#education_content,
+#certifications {
+  text-align: left;
+}
+.school,
+.job,
+.company {
+  font-weight: bold;
+  color: #a01b1b;
+}
+.years,
+.degree {
+  font-style: italic;
+}
+#worklist {
+  text-align: left;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* phone styles */
+@media screen and (max-width: 760px) {
+  #education_main {
+    width: 95%;
+  }
+}
+
+.listwrapper dl {
+  width: 80%;
+}
+.listwrapper dd {
+  float: left;
+  width: 40%;
+  text-align: left;
+}
+.listwrapper br {
+  clear: left;
+}
+.listwrapper {
+  margin-bottom: 1em;
+  margin-left: 4em
+}
+
+@media screen and (max-width: 760px) {
+    .listwrapper dl {
+        margin-left: 10%;
+    }
+  .listwrapper dd {
+    width: 80%;
+  }
+}
+
+#skills-img {
+  max-width: 80%;
+  /* margin: auto; */
+}

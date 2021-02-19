@@ -1,0 +1,32 @@
+/*********************************************************************
+***
+*Original Author:                                 *Joshua Milbourne
+*Date Created:                                    *09/30/20
+*Version:                                         *1.0
+*Date Last Modified:                              *12/09/20
+*Modified by:                                     *Joshua Milbourne
+*Modification log:                                *
+
+        09/30/20  Joshua Milbourne  v0.5  Created cards.css
+        12/09/20  Joshua Milbourne  v1.0  Removed all unused code from moving project cards onto Bootstrap 4
+***
+*********************************************************************/
+
+#cards-section {
+  margin: auto;
+}
+.card {
+  display: inline-block;
+  margin: 1em;
+}
+.home-card, .card {
+  width: 400px;
+  padding: 20px;
+  background-color: rgba(228, 228, 228, 0.726);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+@media only screen and (max-width: 450px) {
+  .home-card, .card {
+    width: 85%;
+  }
+}
