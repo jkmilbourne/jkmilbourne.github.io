@@ -1,0 +1,105 @@
+/*********************************************************************
+***
+*Original Author:                                 *Joshua Milbourne
+*Date Created:                                    *10/12/20
+*Version:                                         *
+*Date Last Modified:                              *
+*Modified by:                                     *
+*Modification log:                                *
+***
+*********************************************************************/
+
+/* Overlay transitions */
+
+.fade-enter-active,
+.fade-leave-active {
+  /* transition of overlay in and out */
+  transition: opacity .5s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  /* adjust opacity of overlaty entering and leaving playfield */
+  opacity: 0;
+}
+
+.zoom-enter-active,
+.zoom-leave-active {
+  /* transition timing */
+  transition: opacity .3s, transform .3s;
+}
+
+.zoom-enter,
+.zoom-leave-to {
+  /* zoom effect for overlays */
+  opacity: 0;
+  transform: scale(.7);
+}
+
+/* Hand */
+
+.hand-enter-active,
+.hand-leave-active {
+  /* transition of card entering or leaving playfield */
+  transition: opacity .5s;
+}
+
+.hand-enter,
+.hand-leave-to {
+  /* adjust opacity of card entering or leaving playfield */
+  opacity: 0;
+}
+
+.hand-enter-active .wrapper,
+.hand-leave-active .wrapper {
+  /* active card animation with cb and transfoem-origin */
+  transition: transform .8s cubic-bezier(.08,.74,.34,1);
+  transform-origin: bottom center;
+}
+
+.hand-enter .wrapper,
+.hand-leave-to .wrapper {
+  /* animate card being played or drawn with transform */
+  transform: rotateX(90deg);
+}
+
+.hand-enter-active .card,
+.hand-leave-active .card {
+  /* animate card being played or drawn with cb */
+  transition: margin .8s cubic-bezier(.08,.74,.34,1);
+}
+
+.hand-enter .card,
+.hand-leave-to .card {
+  margin: 0 -100px;
+}
+
+/* Card */
+
+.card {
+  /* Used for enter, move and mouse over animations */
+  transition: all .3s;
+}
+
+.card-enter {
+  opacity: 0;
+  /* Slide from the right */
+  transform: scale(.8) translateX(100px);
+}
+
+.card-leave-active {
+  /* We need different timings for the leave transition */
+  transition: all 1s, opacity .5s .5s;
+  /* Keep it in the same horizontal position */
+  position: absolute !important;
+  /* Make it painted over the other cards */
+  z-index: 10;
+  /* Unclickable during the transition */
+  pointer-events: none;
+}
+
+.card-leave-to {
+  opacity: 0;
+  /* Zoom the card upwards */
+  transform: translateX(-106px) translateY(-300px) scale(1.5);
+}
