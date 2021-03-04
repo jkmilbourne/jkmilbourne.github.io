@@ -1,0 +1,108 @@
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author:                                   #Joshua Milbourne
+#Date Created:                                      #10/07/20
+#Version:                                           #
+#Date Last Modified:                                #
+#Modified by:                                       #
+#Modification log:                                  #
+ --
+------------------------------------------------------------------------------------------------------------------>
+
+
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-------------------------------------------------------------------------------- CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!----------------------------------------- JavaScript jQuery then popper then bootstrap 3 then scripts.js -->
+  <!-- jQuery ver 2.2 to be compatible with scrollTop for smooth scrolling -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+
+</head>
+<body>
+<!--------------------------------------------------------------------------------- Top Nav Fixed to Top-->
+  <div class="topnav navbar-fixed-top" id="myTopnav">
+    <a href="#home" class="slide_section">Home</a>
+    <a href="#section1" class="slide_section">Section 1</a>
+    <a href="#section2" class="slide_section">Section 2</a>
+    <a href="#section3" class="slide_section">Section 3</a>
+    <a href="#section4" class="slide_section">Section 4</a>
+    <a href="#section5" class="slide_section">Section 5</a>
+    <a href="#section6" class="slide_section">Section 6</a>
+    <!-- hamburger menu -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+<!------------------------------------------------------------------------------------- Parallax with smooth scrolling -->
+<div class="bgimg-1" id="home">
+  <div class="caption">
+  <span class="border">Lorem ipsum dolor?</span>
+  </div>
+</div>
+<!-- section 1 -->
+<div id="section1">
+  <h3 id="section1_h3">Lorem ipsum dolor?</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident eum, earum enim, tempora explicabo minima architecto modi voluptates mollitia id accusantium eaque magnam quo veniam quam quisquam numquam voluptas asperiores! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis doloribus explicabo, laboriosam nihil, beatae saepe ab numquam porro, et magni nulla harum unde velit quas temporibus totam debitis dolore. Eos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis fuga temporibus officiis deleniti quos, libero sint et quasi vitae, numquam rem reiciendis aperiam deserunt adipisci soluta iusto dolorem labore omnis!</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, dolor quas deserunt, est eaque in eligendi assumenda officia quos vel itaque. Quidem eos a eveniet libero excepturi pariatur quasi sint! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto consequatur aliquam itaque ut? Alias voluptas hic deleniti voluptatibus delectus illum rem animi accusamus cumque consectetur, dolorum corporis harum rerum tempora! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam eaque voluptatibus asperiores hic quidem possimus beatae provident sunt, optio tempore perspiciatis soluta totam temporibus eius harum iusto quos, reiciendis impedit.</p>
+</div>
+<!-- section 2 -->
+<div class="bgimg-2" id="section2">
+  <div class="caption">
+  <span id="section2_span" class="border">Lorem ipsum</span>
+  </div>
+</div>
+<!-- section 3 -->
+<div id="section3">
+  <div id="section3_div">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, harum officia reprehenderit natus laudantium veritatis asperiores. Itaque unde eligendi asperiores provident. In iste eius omnis corrupti qui, dolores consequatur possimus!</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, accusantium fugiat libero eveniet iste quas autem dolores porro modi perspiciatis atque ad aliquid laborum in voluptatem harum commodi inventore nihil.</p>
+  </div>
+</div>
+<!-- section 4 -->
+<div id="section4" class="bgimg-3">
+  <div class="caption">
+  <span id="section4_span" class="border">Exercitationem</span>
+  </div>
+</div>
+<!-- section 5 -->
+<div id="section5">
+  <div id="section5_div">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quibusdam molestiae mollitia suscipit, dolore sint fuga saepe obcaecati quam magnam eius natus ratione ut sequi aliquam voluptates a ipsam dolor?</p>
+  </div>
+</div>
+<!-- section 6 -->
+<div id="section6" class="bgimg-1">
+  <div class="caption">
+    <span class="border">Lorem ipsum dolor</span>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="page-footer font-small blue">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="#"> joshuamilbourne.com</a><br>
+    <!-- Social Links open in new header -->
+    <a href="https://www.facebook.com/" target="blank"><img src="images/icons8-facebook-64.png" alt="icon"></a>
+    <a href="https://github.com/" target="blank"><img src="images/icons8-github-64.png" alt="icon"></a>
+    <a href="https://www.instagram.com/" target="blank"><img src="images/icons8-instagram-64.png" alt="icon"></a>
+    <a href="https://www.linkedin.com/" target="blank"><img src="images/icons8-linkedin-64.png" alt="icon"></a>
+  </div>
+
+</footer>
+<!-- Footer -->
+
+</body>
+</html>
